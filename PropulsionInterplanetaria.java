@@ -9,6 +9,6 @@ public class PropulsionInterplanetaria implements SistemaPropulsion{
 
 	@Override
 	public void getTipo(){
-		System.out.println(tipo);
+		System.out.println("-" + tipo);
 	}
 }

@@ -8,9 +8,9 @@ public class FabricaSistemaPropulsion extends AbstractFactory {
 	public SistemaPropulsion getSistemaPropulsion(String SistemaPropulsion) {
 		if (SistemaPropulsion == null) {
 			return null;
-		} else if (SistemaPropulsion.equalsIgnoreCase("interplanetaria")) {
+		} else if (SistemaPropulsion.equalsIgnoreCase("interplanetario")) {
 			return new PropulsionInterplanetaria();
-		} else if (SistemaPropulsion.equalsIgnoreCase("intergalactica")) {
+		} else if (SistemaPropulsion.equalsIgnoreCase("intergalactico")) {
 			return new PropulsionIntergalactica();
 		} else if (SistemaPropulsion.equalsIgnoreCase("intercontinental")) {
 			return new PropulsionIntercontinental();

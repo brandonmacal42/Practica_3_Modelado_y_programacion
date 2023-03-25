@@ -7,6 +7,8 @@ public class CheemsMecanico{
 			return new FabricaBlindaje();
 		} else if(opcion.equalsIgnoreCase("propulsion")){
 			return new FabricaSistemaPropulsion();
+		}else if(opcion.equalsIgnoreCase("armas")){
+			return new FabricaArmas();
 		}
 		return null;
 	}

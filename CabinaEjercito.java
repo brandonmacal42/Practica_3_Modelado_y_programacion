@@ -9,6 +9,6 @@ public class CabinaEjercito implements Cabina{
 
 	@Override
 	public void getTipo(){
-		System.out.println(tipo);
+		System.out.println("-" + tipo);
 	}
 }
