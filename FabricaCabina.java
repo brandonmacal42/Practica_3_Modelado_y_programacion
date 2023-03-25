@@ -2,16 +2,16 @@ public class FabricaCabina extends AbstractFactory{
 	
 	@Override
 	public Object getComponente(String tipoComponente){
-		return getLLanta(tipoComponente);
+		return getCabina(tipoComponente);
 	}
 
-	public Cabina getLLanta(String tipoLLanta){
-		if(tipoLLanta == null){
+	public Cabina getCabina(String tipoCabina){
+		if(tipoCabina == null){
 			return null;
-		} else if(tipoLLanta.equalsIgnoreCase("deportiva")){
-			return new Cabina1Piloto();
-		} else if(tipoLLanta.equalsIgnoreCase("monstruo")){
-			return new CabinaPequña();
+		} else if(tipoCabina.equalsIgnoreCase("deportiva")){
+			return new CabinaUnPiloto();
+		} else if(tipoCabina.equalsIgnoreCase("monstruo")){
+			return new CabinaPequeña();
 		}
 		return null;
 	}	

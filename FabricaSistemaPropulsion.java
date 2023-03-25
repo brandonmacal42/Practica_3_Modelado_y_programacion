@@ -5,12 +5,12 @@ public class FabricaSistemaPropulsion extends AbstractFactory{
 		return getSistemaPropulsion(tipoComponente);
 	}
 
-	public SistemaPropulsion getSistemaPropulsion(String tipoMotor){
-		if(tipoMotor == null){
+	public SistemaPropulsion getSistemaPropulsion(String SistemaPropulsion){
+		if(SistemaPropulsion == null){
 			return null;
-		} else if(tipoMotor.equalsIgnoreCase("deportivo")){
+		} else if(SistemaPropulsion.equalsIgnoreCase("deportivo")){
 			return new PropulsionInterplanetaria();
-		} else if(tipoMotor.equalsIgnoreCase("monstruo")){
+		} else if(SistemaPropulsion.equalsIgnoreCase("monstruo")){
 			return new PropulsionIntergalactica();
 		}
 		return null;

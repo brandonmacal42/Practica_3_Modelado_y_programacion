@@ -1,10 +1,10 @@
-public class PropulsionInterplanetaria implements SistemaPropulsion{
+public class PropulsionIntercontinental implements SistemaPropulsion{
 	
 	String tipo = "";
 
 	@Override
 	public void crearSistemaPropulsion(){
-		tipo = "Sistema de proulsion interplanetario";
+		tipo = "Sistema de propulsion intercontinental";
 	}
 
 	@Override

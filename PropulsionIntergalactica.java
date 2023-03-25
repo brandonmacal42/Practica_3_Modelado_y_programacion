@@ -4,7 +4,7 @@ public class PropulsionIntergalactica implements SistemaPropulsion{
 
 	@Override
 	public void crearSistemaPropulsion(){
-		tipo = "Motor monstruo";
+		tipo = "Sistema de propulsion intergalactico";
 	}
 
 	@Override

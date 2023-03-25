@@ -1,10 +1,10 @@
-public class CabinaPequña implements Cabina{
+public class CabinaEjercito implements Cabina{
 	
 	String tipo = "";
 
 	@Override
 	public void crearCabina(){
-		tipo = "LLanta monstruo";
+		tipo = "Cabina ejercito";
 	}
 
 	@Override

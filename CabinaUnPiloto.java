@@ -1,10 +1,10 @@
-public class Cabina1Piloto implements Cabina {
+public class CabinaUnPiloto implements Cabina {
 
 	String tipo = "";
 
 	@Override
 	public void crearCabina() {
-		tipo = "LLanta deportiva";
+		tipo = "Cabina un piloto";
 	}
 
 	@Override
