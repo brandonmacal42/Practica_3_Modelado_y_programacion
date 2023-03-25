@@ -5,54 +5,54 @@ public class Main{
 		CheemsMecanico cheems = new CheemsMecanico();
 
 		//Fabricas para cada parte del auto.
-		AbstractFactory fabricaLLantas = 
-							cheems.getFactory("LLANTA");
-		AbstractFactory fabricaCarrocerias = 
-							cheems.getFactory("CARROCERIA");
-		AbstractFactory fabricaMotores = 
-							cheems.getFactory("MOTOR");
+		AbstractFactory fabricaBlindajes = 
+							cheems.getFactory("BLINDAJE");
+		AbstractFactory fabricaCabinas = 
+							cheems.getFactory("CABINA");
+		AbstractFactory fabricaSistemasPropulsion = 
+							cheems.getFactory("PROPULSION");
 
 		System.out.println("***EL AUTO 1 PARA EL CLIENTE 1 ES EL SIGUIENTE:***");
 		//Se crean las llantas.
-		Cabina llantasNuevas1 = 
-					(Cabina)fabricaLLantas.getComponente("monstruo");
-		llantasNuevas1.crearLLanta();
+		Cabina CabinaNueva1 = 
+					(Cabina)fabricaCabinas.getComponente("monstruo");
+		CabinaNueva1.crearCabina();
 
 		//Se crea la carroceria.
-		Carroceria carroceriaNueva1 = 
-					(Carroceria)fabricaCarrocerias.getComponente("deportiva");
-		carroceriaNueva1.crearCarroceria();
+		Blindaje blindajeNuevo1 = 
+					(Blindaje)fabricaBlindajes.getComponente("deportiva");
+		blindajeNuevo1.crearBlindaje();
 
 		//Se crea el motor.
-		SistemPropulsion motorNuevo1 = 
-					(SistemPropulsion)fabricaMotores.getComponente("monstruo");
-		motorNuevo1.crearMotor();
+		SistemaPropulsion propulsionNuevo1 = 
+					(SistemaPropulsion)fabricaSistemasPropulsion.getComponente("monstruo");
+		propulsionNuevo1.crearSistemaPropulsion();
 
 		//Se crea el auto nuevo con esas partes.
-		Nave autoNuevo1 = 
-					new Nave(llantasNuevas1, carroceriaNueva1, motorNuevo1);
-		autoNuevo1.muestraAuto();
+		Nave naveNueva1 = 
+					new Nave(CabinaNueva1, blindajeNuevo1, propulsionNuevo1);
+		naveNueva1.muestraNave();
 
 		System.out.println("\n***EL AUTO 2 PARA EL CLIENTE 2 ES EL SIGUIENTE:***");
 		//Se crean las llantas.
-		Cabina llantasNuevas2 = 
-					(Cabina)fabricaLLantas.getComponente("deportiva");
-		llantasNuevas2.crearLLanta();
+		Cabina CabinaNueva2 = 
+					(Cabina)fabricaCabinas.getComponente("deportiva");
+		CabinaNueva2.crearCabina();
 
 		//Se crea la carroceria.
-		Carroceria carroceriaNueva2 = 
-					(Carroceria)fabricaCarrocerias.getComponente("deportiva");
-		carroceriaNueva2.crearCarroceria();
+		Blindaje blindajeNuevo2 = 
+					(Blindaje)fabricaBlindajes.getComponente("deportiva");
+		blindajeNuevo2.crearBlindaje();
 
 		//Se crea el motor.
-		SistemPropulsion motorNuevo2 = 
-					(SistemPropulsion)fabricaMotores.getComponente("deportivo");
-		motorNuevo2.crearMotor();
+		SistemaPropulsion propulsionNuevo2 = 
+					(SistemaPropulsion)fabricaSistemasPropulsion.getComponente("deportivo");
+		propulsionNuevo2.crearSistemaPropulsion();
 
 		//Se crea el auto nuevo con esas partes.
-		Nave autoNuevo2 = 
-					new Nave(llantasNuevas2, carroceriaNueva2, motorNuevo2);
-		autoNuevo2.muestraAuto();
+		Nave naveNueva2 = 
+					new Nave(CabinaNueva2, blindajeNuevo2, propulsionNuevo2);
+		naveNueva2.muestraNave();
 
 	}
 }

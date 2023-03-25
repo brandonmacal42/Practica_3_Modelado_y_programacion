@@ -4,7 +4,7 @@ public class CabinaUnPiloto implements Cabina {
 
 	@Override
 	public void crearCabina() {
-		tipo = "Cabina un piloto";
+		tipo = "Cabina de un piloto";
 	}
 
 	@Override
