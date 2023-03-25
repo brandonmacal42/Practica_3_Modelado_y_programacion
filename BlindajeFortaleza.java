@@ -2,7 +2,7 @@ public class BlindajeFortaleza implements Blindaje{
 	String tipo = "";
 	@Override
 	public void crearBlindaje() {
-		tipo = "Blindaje Fortaleza";
+		tipo = "Blindaje fortaleza";
 	}
 
 	@Override

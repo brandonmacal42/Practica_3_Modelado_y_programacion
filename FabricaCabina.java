@@ -8,10 +8,12 @@ public class FabricaCabina extends AbstractFactory{
 	public Cabina getCabina(String tipoCabina){
 		if(tipoCabina == null){
 			return null;
-		} else if(tipoCabina.equalsIgnoreCase("deportiva")){
+		} else if(tipoCabina.equalsIgnoreCase("piloto")){
 			return new CabinaUnPiloto();
-		} else if(tipoCabina.equalsIgnoreCase("monstruo")){
+		} else if(tipoCabina.equalsIgnoreCase("pequeña")){
 			return new CabinaPequeña();
+		}else if(tipoCabina.equalsIgnoreCase("ejercito")){
+			return new CabinaEjercito();
 		}
 		return null;
 	}	

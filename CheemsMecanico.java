@@ -5,7 +5,7 @@ public class CheemsMecanico{
 			return new FabricaCabina();
 		} else if(opcion.equalsIgnoreCase("blindaje")){
 			return new FabricaBlindaje();
-		} else if(opcion.equalsIgnoreCase("motor")){
+		} else if(opcion.equalsIgnoreCase("propulsion")){
 			return new FabricaSistemaPropulsion();
 		}
 		return null;
