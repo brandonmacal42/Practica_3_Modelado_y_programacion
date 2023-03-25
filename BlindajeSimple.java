@@ -4,7 +4,7 @@ public class BlindajeSimple implements Blindaje{
 
 	@Override
 	public void crearBlindaje(){
-		tipo = "Carroceria deportiva";
+		tipo = "Blindaje Simple";
 	}
 
 	@Override

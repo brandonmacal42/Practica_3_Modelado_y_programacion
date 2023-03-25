@@ -1,14 +1,14 @@
-public class Cabina1piloto implements Cabina{
-	
+public class Cabina1Piloto implements Cabina {
+
 	String tipo = "";
 
 	@Override
-	public void crearCabina(){
+	public void crearCabina() {
 		tipo = "LLanta deportiva";
 	}
 
 	@Override
-	public void getTipo(){
+	public void getTipo() {
 		System.out.println(tipo);
 	}
 }

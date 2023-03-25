@@ -4,7 +4,7 @@ public class BlindajeReforzado implements Blindaje{
 
 	@Override
 	public void crearBlindaje(){
-		tipo = "Carroceria monstruo";
+		tipo = "Blindaje Reforzado";
 	}
 
 	@Override

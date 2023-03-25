@@ -6,7 +6,7 @@ public class CheemsMecanico{
 		} else if(opcion.equalsIgnoreCase("carroceria")){
 			return new FabricaBlindaje();
 		} else if(opcion.equalsIgnoreCase("motor")){
-			return new FabricaMotores();
+			return new FabricaSistemaPropulsion();
 		}
 		return null;
 	}
