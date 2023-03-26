@@ -8,4 +8,9 @@ public class PropulsionIntergalactica extends SistemaPropulsion{
 	public String nombre(){
 		return "Sistema de propulsion intergalactico";
 	}
+
+	@Override
+	public String descripcion() {
+		return "Sistema de Propulsion intergalactico capaz de viajar a cualquier parte de la galaxia";
+	}
 }

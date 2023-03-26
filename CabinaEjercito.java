@@ -8,4 +8,9 @@ public class CabinaEjercito extends Cabina{
 	public String nombre(){
 		return "Cabina ejercito";
 	}
+
+	@Override
+	public String descripcion() {
+		return "Cabina hecha para poder transportar toda una gran flota o ejercito";
+	}
 }

@@ -3,17 +3,23 @@ import java.util.LinkedList;
 public class NaveIndividualCombate extends Nave{
 
    @Override
-   public void agregarHamburguesa(){
-      componentes.add(new BlindajeFortaleza());
+   public void agregarBlindaje(){
+      componentes.add(new BlindajeSimple());
    }
 
    @Override
-   public void agregarBebida(){
-      componentes.add(new ArmaLaserDestructor());
+   public void agregarArma(){
+      componentes.add(new ArmaLaserSimple());
    }
 
    @Override
-   public void agregarPapas(){
-      componentes.add(new CabinaPequeña());
+   public void agregarCabina(){
+      componentes.add(new CabinaUnPiloto());
    }
+
+   @Override
+   public void agregarPropulsion() {
+      componentes.add(new PropulsionIntercontinental());
+   }
+
 }

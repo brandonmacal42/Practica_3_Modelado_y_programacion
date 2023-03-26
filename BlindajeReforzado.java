@@ -1,11 +1,17 @@
 public class BlindajeReforzado extends Blindaje{
 	@Override
 	public double precio(){
-		return 25.5;
+		return 2550;
 	}
 
 	@Override
 	public String nombre(){
 		return "Blindaje reforzado";
 	}
+
+	@Override
+	public String descripcion() {
+		return "Blindaje reforzado capaz de resistir algunos misiles de plasma";
+	}
+	
 }

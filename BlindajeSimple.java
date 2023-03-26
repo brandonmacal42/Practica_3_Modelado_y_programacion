@@ -1,11 +1,16 @@
 public class BlindajeSimple extends Blindaje{
 	@Override
 	public double precio(){
-		return 25.5;
+		return 2000;
 	}
 
 	@Override
 	public String nombre(){
 		return "Blindaje simple";
+	}
+
+	@Override
+	public String descripcion() {
+		return "Blindaje que solo resiste disparos de laseres simples";
 	}
 }

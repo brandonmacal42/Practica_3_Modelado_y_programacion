@@ -3,20 +3,24 @@ import java.util.LinkedList;
 public class NaveEspacialGuerra extends Nave{
 
    @Override
-   public void agregarHamburguesa(){
-      componentes.add(new BlindajeFortaleza());
+   public void agregarBlindaje(){
       componentes.add(new BlindajeFortaleza());
    }
 
    @Override
-   public void agregarBebida(){
+   public void agregarArma(){
       componentes.add(new ArmaLaserDestructor());
-      componentes.add(new ArmaLaserSimple());
    }
 
    @Override
-   public void agregarPapas(){
-      componentes.add(new CabinaPequeña());
+   public void agregarCabina(){
       componentes.add(new CabinaEjercito());
    }
+
+   @Override
+   public void agregarPropulsion() {
+      componentes.add(new PropulsionIntergalactica());
+   }
+
+   
 }

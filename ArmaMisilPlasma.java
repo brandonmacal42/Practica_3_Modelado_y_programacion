@@ -11,7 +11,6 @@ public class ArmaMisilPlasma extends Armas {
 
 	@Override
 	public String descripcion() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Unimplemented method 'descripcion'");
+		return "Arma misil capas de dañar un blindaje reforzado";
 	}
 }

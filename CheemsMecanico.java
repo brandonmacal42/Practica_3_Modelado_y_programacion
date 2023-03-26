@@ -2,9 +2,10 @@
 public class CheemsMecanico {
 
    public void preparaComboUno(Nave com){
-      com.agregarHamburguesa();
-      com.agregarBebida();
-      com.agregarPapas();
+      com.agregarBlindaje();
+      com.agregarArma();
+      com.agregarCabina();
+      com.agregarPropulsion();
    }   
 
    public void preparaComboDos(Nave com){

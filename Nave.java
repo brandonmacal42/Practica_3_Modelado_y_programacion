@@ -21,9 +21,11 @@ public abstract class Nave{
       }		
    }
 
-   public abstract void agregarHamburguesa();
+   public abstract void agregarBlindaje();
 
-   public abstract void agregarBebida();
+   public abstract void agregarArma();
 
-   public abstract void agregarPapas();
+   public abstract void agregarCabina();
+
+   public abstract void agregarPropulsion();
 }

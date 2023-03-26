@@ -8,4 +8,10 @@ public class CabinaUnPiloto extends Cabina{
 	public String nombre(){
 		return "Cabina de un piloto";
 	}
+
+	@Override
+	public String descripcion() {
+		return "Cabina para un solo piloto";
+	}
+	
 }

@@ -3,17 +3,23 @@ import java.util.LinkedList;
 public class NaveMilitarTransporte extends Nave{
 
    @Override
-   public void agregarHamburguesa(){
+   public void agregarBlindaje(){
       componentes.add(new BlindajeReforzado());
    }
 
    @Override
-   public void agregarBebida(){
-      componentes.add(new ArmaLaserSimple());
+   public void agregarArma(){
+      componentes.add(new ArmaMisilPlasma());
    }
 
    @Override
-   public void agregarPapas(){
-      componentes.add(new CabinaEjercito());
+   public void agregarCabina(){
+      componentes.add(new CabinaPequeña());
    }
+
+   @Override
+   public void agregarPropulsion() {
+      componentes.add(new PropulsionInterplanetaria());
+   }
+
 }

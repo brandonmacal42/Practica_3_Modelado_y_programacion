@@ -8,4 +8,9 @@ public class PropulsionIntercontinental extends SistemaPropulsion{
 	public String nombre(){
 		return "Sistema de propulsion intercontinental";
 	}
+
+	@Override
+	public String descripcion() {
+		return "Sistema de propulsion para hacer viajes cortos sin poder viajer de planeta a planeta";
+	}
 }
