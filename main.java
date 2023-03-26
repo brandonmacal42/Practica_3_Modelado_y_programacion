@@ -33,21 +33,21 @@ public class Main{
 
             switch(opcion){
                 case 1:
-                    Comida combo1 = new Combo1();
+                    Nave combo1 = new NaveIndividualCombate();
                     System.out.println("\nComida Combo 1");
                     cheems.preparaComboUno(combo1);
                     combo1.muestraComida();
                     System.out.println("Total: " + (float)combo1.obtenCosto());
                     break;
                 case 2:
-                    Comida combo2 = new Combo2();
+                    Nave combo2 = new NaveMilitarTransporte();
                     System.out.println("\nComida Combo 2");
                     cheems.preparaComboDos(combo2);
                     combo2.muestraComida();
                     System.out.println("Total: " + (float)combo2.obtenCosto());
                     break;
                 case 3:
-                    Comida combo3 = new Combo3();
+                    Nave combo3 = new NaveEspacialGuerra();
                     System.out.println("\nComida Combo 3");
                     cheems.preparaComboTres(combo3);
                     combo3.muestraComida();
