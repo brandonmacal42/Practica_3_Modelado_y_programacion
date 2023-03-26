@@ -1,7 +1,7 @@
 public class CabinaPequeña extends Cabina{
 	@Override
 	public double precio(){
-		return 15.5;
+		return 1550;
 	}
 
 	@Override

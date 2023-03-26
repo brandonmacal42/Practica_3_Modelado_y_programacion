@@ -1,7 +1,7 @@
 public class ArmaLaserDestructor extends Armas{
 	@Override
 	public double precio(){
-		return 2500;
+		return 4500;
 	}
 
 	@Override

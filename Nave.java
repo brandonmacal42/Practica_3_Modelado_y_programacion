@@ -3,10 +3,13 @@ import java.util.LinkedList;
 public abstract class Nave{
 	protected LinkedList<Componente> componentes = 
 					new LinkedList<Componente>();
+   float costo = 0;
+   int ataque = 0;
+   int defensa =0;
+   float velocidad;
+   
 
    public double obtenCosto(){
-      float costo = 0;
-      
       for (Componente com : componentes) {
          costo += com.precio();
       }		
