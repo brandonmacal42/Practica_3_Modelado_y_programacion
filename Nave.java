@@ -16,7 +16,7 @@ public abstract class Nave{
       return costo;
    }
 
-   public void muestraComida(){
+   public void muestraComponentes(){
    
       for (Componente com : componentes) {
          System.out.print("Componente : " + com.nombre());

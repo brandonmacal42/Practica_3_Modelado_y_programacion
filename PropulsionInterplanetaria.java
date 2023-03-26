@@ -6,11 +6,11 @@ public class PropulsionInterplanetaria extends SistemaPropulsion{
 
 	@Override
 	public String nombre(){
-		return "Sistema de proulsion interplanetario";
+		return "Sistema de propulsion interplanetario";
 	}
 
 	@Override
 	public String descripcion() {
-		return "Sistema de proulsion interplanetario capaz de viajar de planeta a planeta";
+		return "Sistema de propulsion interplanetario capaz de viajar de planeta a planeta";
 	}
 }
