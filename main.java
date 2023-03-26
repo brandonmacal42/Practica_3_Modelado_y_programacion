@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main{
+public class main{
 
     public static void main(String[] args){
 
@@ -44,21 +44,21 @@ public class Main{
             switch(opcion){
                 case 1:
                     Nave naveIndividual = new NaveIndividualCombate();
-                    System.out.println("\nComida Combo 1");
+                    System.out.println("\n Opción 1");
                     cheems.armaNaveIndividual(naveIndividual);
                     naveIndividual.muestraComida();
                     System.out.println("Total: " + (float)naveIndividual.obtenCosto());
                     break;
                 case 2:
                     Nave naveTransporte = new NaveMilitarTransporte();
-                    System.out.println("\nComida Combo 2");
+                    System.out.println("\n Opción 2");
                     cheems.armaNaveTransporte(naveTransporte);
                     naveTransporte.muestraComida();
                     System.out.println("Total: " + (float)naveTransporte.obtenCosto());
                     break;
                 case 3:
                     Nave naveGuerra = new NaveEspacialGuerra();
-                    System.out.println("\nComida Combo 3");
+                    System.out.println("\n Opci3");
                     cheems.armaNaveGuerra(naveGuerra);
                     naveGuerra.muestraComida();
                     System.out.println("Total: " + (float)naveGuerra.obtenCosto());
