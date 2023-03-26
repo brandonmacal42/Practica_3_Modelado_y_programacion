@@ -1,6 +1,6 @@
 import java.util.LinkedList;
 
-public class Combo1 extends Comida{
+public class NaveIndividualCombate extends Nave{
 
    @Override
    public void agregarHamburguesa(){

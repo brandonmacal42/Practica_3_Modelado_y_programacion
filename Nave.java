@@ -1,6 +1,6 @@
 import java.util.LinkedList;
 
-public abstract class Comida{
+public abstract class Nave{
 	protected LinkedList<Componente> componentes = 
 					new LinkedList<Componente>();
 

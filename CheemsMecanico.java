@@ -1,19 +1,19 @@
 
 public class CheemsMecanico {
 
-   public void preparaComboUno(Comida com){
+   public void preparaComboUno(Nave com){
       com.agregarHamburguesa();
       com.agregarBebida();
       com.agregarPapas();
    }   
 
-   public void preparaComboDos(Comida com){
+   public void preparaComboDos(Nave com){
       com.agregarHamburguesa();
       com.agregarBebida();
       com.agregarPapas();
    }
 
-   public void preparaComboTres(Comida com){
+   public void preparaComboTres(Nave com){
       com.agregarHamburguesa();
       com.agregarBebida();
       com.agregarPapas();
