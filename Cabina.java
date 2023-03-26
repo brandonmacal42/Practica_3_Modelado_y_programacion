@@ -1,4 +1,6 @@
-public interface Cabina{
-	void crearCabina();
-	void getTipo();
+public abstract class Cabina implements Componente{
+
+	@Override
+	public abstract double precio();
+
 }

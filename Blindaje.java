@@ -1,4 +1,6 @@
-public interface Blindaje{
-	void crearBlindaje();
-	void getTipo();
+public abstract class Blindaje implements Componente{
+
+	@Override
+	public abstract double precio();
+
 }

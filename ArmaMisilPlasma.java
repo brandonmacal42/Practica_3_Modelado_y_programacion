@@ -1,17 +1,11 @@
-/**
- * ArmaMisilPlasma
- */
-public class ArmaMisilPlasma implements Armas{
-String tipo = "";
+public class ArmaMisilPlasma extends Armas {
 	@Override
-	public void crearArmas() {
-		tipo = "Arma misil de plasma";
+	public double precio(){
+		return 15.2;
 	}
 
 	@Override
-	public void getTipo() {
-		System.out.println("-" + tipo);
+	public String nombre(){
+		return "Arma misil de plasma";
 	}
-
-	
 }

@@ -1,13 +1,11 @@
-public class ArmaLaserDestructor implements Armas {
-	String tipo ="";
+public class ArmaLaserDestructor extends Armas{
 	@Override
-	public void crearArmas() {
-		tipo = "Arma laser destructor de planetas";
+	public double precio(){
+		return 17.4;
 	}
 
 	@Override
-	public void getTipo() {
-		System.out.println("-" + tipo);
+	public String nombre(){
+		return "Arma laser destructor de planetas";
 	}
-	
 }

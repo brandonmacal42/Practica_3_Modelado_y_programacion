@@ -1,4 +1,6 @@
-public interface Armas {
-	void crearArmas();
-	void getTipo();
+public abstract class Armas implements Componente{
+
+	@Override
+	public abstract double precio();
+
 }

@@ -1,14 +1,11 @@
-public class BlindajeSimple implements Blindaje{
-	
-	String tipo = "";
-
+public class BlindajeSimple extends Blindaje{
 	@Override
-	public void crearBlindaje(){
-		tipo = "Blindaje simple";
+	public double precio(){
+		return 25.5;
 	}
 
 	@Override
-	public void getTipo(){
-		System.out.println("-" + tipo);
+	public String nombre(){
+		return "Blindaje simple";
 	}
 }

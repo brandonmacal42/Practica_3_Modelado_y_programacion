@@ -1,15 +1,21 @@
-public class CheemsMecanico{
-	
-	public static AbstractFactory getFactory(String opcion){
-		if(opcion.equalsIgnoreCase("cabina")){
-			return new FabricaCabina();
-		} else if(opcion.equalsIgnoreCase("blindaje")){
-			return new FabricaBlindaje();
-		} else if(opcion.equalsIgnoreCase("propulsion")){
-			return new FabricaSistemaPropulsion();
-		}else if(opcion.equalsIgnoreCase("armas")){
-			return new FabricaArmas();
-		}
-		return null;
-	}
+
+public class CheemsMecanico {
+
+   public void preparaComboUno(Comida com){
+      com.agregarHamburguesa();
+      com.agregarBebida();
+      com.agregarPapas();
+   }   
+
+   public void preparaComboDos(Comida com){
+      com.agregarHamburguesa();
+      com.agregarBebida();
+      com.agregarPapas();
+   }
+
+   public void preparaComboTres(Comida com){
+      com.agregarHamburguesa();
+      com.agregarBebida();
+      com.agregarPapas();
+   }
 }

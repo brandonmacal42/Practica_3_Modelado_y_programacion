@@ -1,14 +1,11 @@
-public class CabinaPequeña implements Cabina{
-	
-	String tipo = "";
-
+public class CabinaPequeña extends Cabina{
 	@Override
-	public void crearCabina(){
-		tipo = "Cabina pequeña";
+	public double precio(){
+		return 15.5;
 	}
 
 	@Override
-	public void getTipo(){
-		System.out.println("-" + tipo);
+	public String nombre(){
+		return "Cabina pequeña";
 	}
 }

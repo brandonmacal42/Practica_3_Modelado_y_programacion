@@ -1,4 +1,6 @@
-public interface SistemaPropulsion{
-	void crearSistemaPropulsion();
-	void getTipo();
+public abstract class SistemaPropulsion implements Componente{
+
+	@Override
+	public abstract double precio();
+	
 }

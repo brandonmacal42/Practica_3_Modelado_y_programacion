@@ -1,14 +1,11 @@
-public class PropulsionInterplanetaria implements SistemaPropulsion{
-	
-	String tipo = "";
-
+public class PropulsionInterplanetaria extends SistemaPropulsion{
 	@Override
-	public void crearSistemaPropulsion(){
-		tipo = "Sistema de proulsion interplanetario";
+	public double precio(){
+		return 15.5;
 	}
 
 	@Override
-	public void getTipo(){
-		System.out.println("-" + tipo);
+	public String nombre(){
+		return "Sistema de proulsion interplanetario";
 	}
 }

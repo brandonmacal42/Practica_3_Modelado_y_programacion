@@ -1,17 +1,11 @@
-/**
- * ArmaLaserSimple
- */
-public class ArmaLaserSimple implements Armas{
- String tipo = "";
+public class ArmaLaserSimple extends Armas{
 	@Override
-	public void crearArmas() {
-		tipo ="Arma laser simple";
+	public double precio(){
+		return 15.2;
 	}
 
 	@Override
-	public void getTipo() {
-		System.out.println("-" + tipo);
+	public String nombre(){
+		return "Arma laser simple";
 	}
-
-	
 }
