@@ -34,7 +34,6 @@ public class Submenu {
    public void menuS(){
         do {
             System.out.println("\n***BIENVENIDO A SPACESHIP FACTORY***" +  "\n Porfavor ingrese el presupuesto de la nave a cotizar para poder empezar a ayudarlo"); 
-            
 
             try {
 
@@ -54,7 +53,15 @@ public class Submenu {
         System.out.println("4. SISTEMA DE PROPULSION");
         System.out.println("5. Terminar Orden");
         
+            try {
 
+            opcion = numeros.nextInt();
+            
+        } catch (InputMismatchException e) {
+            System.out.println("No puedes introducir letras intentalo de nuevo");
+            numeros.nextLine();
+        }
+            
             switch(opcion){
                 case 1:
                     Nave naveIndividual = new NaveIndividualCombate();
