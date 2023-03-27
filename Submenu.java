@@ -27,7 +27,7 @@ public class Submenu {
         Sistemaopcion = 0;
     }
 
-    public void menuS(){
+   public void menuS(){
         do {
             System.out.println("\n***BIENVENIDO A SPACESHIP FACTORY***" +  "\n Porfavor ingrese el presupuesto de la nave a cotizar para poder empezar a ayudarlo"); 
             try {
@@ -39,30 +39,14 @@ public class Submenu {
                 System.out.println("\n***BIENVENIDO A SPACESHIP FACTORY***" +  "\n Porfavor ingrese el presupuesto de la nave a cotizar para poder empezar a ayudarlo"); 
             }
         } while (true);
-        System.out.println("\n***BIENVENIDO A SPACESHIP FACTORY***"
-        + "\n\n1. ARMAS: \n" + laserSimple.toString() + "\n" + misilPlasma.toString() + "\n"
-        + laserDestructor.toString()
-        + "\n\n2. BLINDAJE \n"
-        + blindajeSimple.toString() + "\n" + blindajeReforzado.toString() + "\n" + blindajeFortaleza.toString()
-        + "\n\n3. CABINA \n" + cabinaUnPiloto.toString() + "\n" + cabinaPequeña.toString() + "\n"
-        + cabinaEjercito.toString()
-        + "\n\n4. SISTEMA DE PROPULSION \n" + PropulsionIntercontinental.toString() + "\n"
-        + PropulsionInterplanetaria.toString() + "\n" + PropulsionIntergalactica.toString());
         do{
-            
-            while (true){
-                try {
-                    String opcionUsuario = sc.nextLine();
-                    opcion = Integer.parseInt(opcionUsuario);
-                    break;
-                }catch (NumberFormatException ex){
-                    System.out.println("Ingresa una opcion valida."
-                        + "\n1.- Combo 1"
-                        + "\n2.- Combo 2"
-                        + "\n3.- Combo 3"
-                        + "\n0.- Salir");
-                }
-            }
+        System.out.println("***BIENVENIDO A SPACESHIP FACTORY***");
+        System.out.println("1. ARMAS");
+        System.out.println("2. BLINDAJE");
+        System.out.println("3. CABINA");
+        System.out.println("4. SISTEMA DE PROPULSION");
+        System.out.println("5. Terminar Orden");
+        
 
             switch(opcion){
                 case 1:
@@ -86,14 +70,15 @@ public class Submenu {
                     naveGuerra.muestraComponentes();
                     System.out.println("Total: " + (float)naveGuerra.obtenCosto());
                     break;
-                case 0:
+                case 5:
                     break;
                 default:
                     System.out.println("Ingresa una opcion valida.");
                     break;
             }
-        }while(opcion != 0);
+        }while(opcion != 5);
     }
+
 
     public void Armas(){
         do {
@@ -133,5 +118,9 @@ public class Submenu {
             System.out.println("3. Sistema de propulsion intergalactico | $5000");
             System.out.println("4. Salir");
         } while (Armaopcion != 4);
+    }
+    
+    public void NaveEstadisticas(){
+        
     }
  } 
