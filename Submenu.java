@@ -4,12 +4,15 @@ public class Submenu{
 
     CheemsMecanico cheems = new CheemsMecanico();
     Scanner sc = new Scanner(System.in);
-    int opcion;
-    int presupuesto;
+    int opcion, presupuesto, Armaopcion, Blindajeopcion, Cabinaopcion, Sistemaopcion;
 
     public Submenu(){
         opcion = 0;
         presupuesto = 0;
+        Armaopcion = 0;
+        Blindajeopcion = 0;
+        Cabinaopcion = 0;
+        Sistemaopcion = 0;
     }
 
     public void menuS(){
@@ -77,18 +80,42 @@ public class Submenu{
     }
 
     public void Armas(){
-        System.out.println("ARMAS: \nArma Laser Simple | $1590 \nArma Misil de Plasma | $1720 \nArma Laser Destructor de Planetas | 4500");
+        do {
+            System.out.println("ARMAS");
+            System.out.println("1. Arma Laser Simple | $1590 ");
+            System.out.println("2. Arma Misil de Plasma | $1720");
+            System.out.println("3. Arma Laser Destructor de Planetas | 4500");
+            System.out.println("4. Salir");
+        } while (Armaopcion != 4);
     }
 
     public void Blindaje(){
-
+        do {
+            System.out.println("BLINDAJE");
+            System.out.println("1. Arma Laser Simple | $1590 ");
+            System.out.println("2. Arma Misil de Plasma | $1720");
+            System.out.println("3. Arma Laser Destructor de Planetas | 4500");
+            System.out.println("4. Salir");
+        } while (Armaopcion != 4);
     }
 
     public void Cabina(){
-
+        do {
+            System.out.println("CABINA");
+            System.out.println("1. Arma Laser Simple | $1590 ");
+            System.out.println("2. Arma Misil de Plasma | $1720");
+            System.out.println("3. Arma Laser Destructor de Planetas | 4500");
+            System.out.println("4. Salir");
+        } while (Armaopcion != 4);
     }
 
     public void SistemaPropulcion(){
-        
+        do {
+            System.out.println("SISTEMA DE PROPULSION");
+            System.out.println("1. Arma Laser Simple | $1590 ");
+            System.out.println("2. Arma Misil de Plasma | $1720");
+            System.out.println("3. Arma Laser Destructor de Planetas | 4500");
+            System.out.println("4. Salir");
+        } while (Armaopcion != 4);
     }
  } 
