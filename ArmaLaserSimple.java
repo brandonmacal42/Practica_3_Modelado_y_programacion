@@ -13,4 +13,8 @@ public class ArmaLaserSimple extends Armas{
 	public String descripcion() {
 		return "Arma laser que solo sirve para dañar pequeñas naves";
 	}
+	@Override 
+	public int ataque(){
+		return 10;
+	}
 }
