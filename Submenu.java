@@ -53,7 +53,7 @@ public class Submenu {
         System.out.println("4. SISTEMA DE PROPULSION");
         System.out.println("5. Terminar Orden");
         
-            try {
+             try {
 
             opcion = numeros.nextInt();
             
@@ -61,31 +61,22 @@ public class Submenu {
             System.out.println("No puedes introducir letras intentalo de nuevo");
             numeros.nextLine();
         }
-            
+
             switch(opcion){
                 case 1:
-                    Nave naveIndividual = new NaveIndividualCombate();
-                    System.out.println("\nComida Combo 1");
-                    cheems.armaNaveIndividual(naveIndividual);
-                    naveIndividual.muestraComponentes();
-                    System.out.println("Total: " + (float)naveIndividual.obtenCosto());
-                    break;
+                Armas();
+                break;
                 case 2:
-                    Nave naveTransporte = new NaveMilitarTransporte();
-                    System.out.println("\nComida Combo 2");
-                    cheems.armaNaveTransporte(naveTransporte);
-                    naveTransporte.muestraComponentes();
-                    System.out.println("Total: " + (float)naveTransporte.obtenCosto());
-                    break;
+                Blindaje(); 
+                break;
                 case 3:
-                    Nave naveGuerra = new NaveEspacialGuerra();
-                    System.out.println("\nComida Combo 3");
-                    cheems.armaNaveGuerra(naveGuerra);
-                    naveGuerra.muestraComponentes();
-                    System.out.println("Total: " + (float)naveGuerra.obtenCosto());
-                    break;
+                Cabina();
+                break;
+                case 4:
+                SistemaPropulcion();
+                break;
                 case 5:
-                    break;
+                break;
                 default:
                     System.out.println("Ingresa una opcion valida.");
                     break;
