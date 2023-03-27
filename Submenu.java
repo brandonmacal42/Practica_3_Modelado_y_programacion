@@ -1,13 +1,25 @@
 import java.util.Scanner;
 
-public class Submenu{
+public class Submenu {
 
     CheemsMecanico cheems = new CheemsMecanico();
     Scanner sc = new Scanner(System.in);
     int opcion;
     int presupuesto;
+    Componente laserSimple = new ArmaLaserSimple();
+    Componente misilPlasma = new ArmaMisilPlasma();
+    Componente laserDestructor = new ArmaLaserDestructor();
+    Componente blindajeFortaleza = new BlindajeFortaleza();
+    Componente blindajeReforzado = new BlindajeReforzado();
+    Componente blindajeSimple = new BlindajeSimple();
+    Componente cabinaEjercito = new CabinaEjercito();
+    Componente cabinaPequeña = new CabinaPequeña();
+    Componente cabinaUnPiloto = new CabinaUnPiloto();
+    Componente PropulsionIntercontinental = new PropulsionIntercontinental();
+    Componente PropulsionIntergalactica = new PropulsionIntergalactica();
+    Componente PropulsionInterplanetaria = new PropulsionInterplanetaria();
 
-    public Submenu(){
+    public Submenu() {
         opcion = 0;
         presupuesto = 0;
     }
@@ -25,10 +37,14 @@ public class Submenu{
             }
         } while (true);
         System.out.println("\n***BIENVENIDO A SPACESHIP FACTORY***"
-        + "\n\n1. ARMAS" 
-        + "\n\n2. BLINDAJE \nBlindaje Simple | $2000 \nBlindaje Reforzado | 2550 \nBlindaje Fortaleza | 3450"
-        + "\n\n3. CABINA \nCabina para un piloto | $1200\nCabina Tripulación pequeña | $1550 \nCabina Ejercito | $3800 "
-        + "\n\n4. SISTEMA DE PROPULSION \nSistema de propulsion intercontinental | $2000 \nSistema de propulsion interplanetario | $3000 \nSistema de propulsion intergalactico | $5000");
+        + "\n\n1. ARMAS: \n" + laserSimple.toString() + "\n" + misilPlasma.toString() + "\n"
+        + laserDestructor.toString()
+        + "\n\n2. BLINDAJE \n"
+        + blindajeSimple.toString() + "\n" + blindajeReforzado.toString() + "\n" + blindajeFortaleza.toString()
+        + "\n\n3. CABINA \n" + cabinaUnPiloto.toString() + "\n" + cabinaPequeña.toString() + "\n"
+        + cabinaEjercito.toString()
+        + "\n\n4. SISTEMA DE PROPULSION \n" + PropulsionIntercontinental.toString() + "\n"
+        + PropulsionInterplanetaria.toString() + "\n" + PropulsionIntergalactica.toString());
         do{
             
             while (true){
@@ -50,21 +66,21 @@ public class Submenu{
                     Nave naveIndividual = new NaveIndividualCombate();
                     System.out.println("\nComida Combo 1");
                     cheems.armaNaveIndividual(naveIndividual);
-                    naveIndividual.muestraComida();
+                    naveIndividual.muestraComponentes();
                     System.out.println("Total: " + (float)naveIndividual.obtenCosto());
                     break;
                 case 2:
                     Nave naveTransporte = new NaveMilitarTransporte();
                     System.out.println("\nComida Combo 2");
                     cheems.armaNaveTransporte(naveTransporte);
-                    naveTransporte.muestraComida();
+                    naveTransporte.muestraComponentes();
                     System.out.println("Total: " + (float)naveTransporte.obtenCosto());
                     break;
                 case 3:
                     Nave naveGuerra = new NaveEspacialGuerra();
                     System.out.println("\nComida Combo 3");
                     cheems.armaNaveGuerra(naveGuerra);
-                    naveGuerra.muestraComida();
+                    naveGuerra.muestraComponentes();
                     System.out.println("Total: " + (float)naveGuerra.obtenCosto());
                     break;
                 case 0:
@@ -76,19 +92,24 @@ public class Submenu{
         }while(opcion != 0);
     }
 
-    public void Armas(){
-        System.out.println("ARMAS: \nArma Laser Simple | $1590 \nArma Misil de Plasma | $1720 \nArma Laser Destructor de Planetas | 4500");
+    public void Armas() {
+        System.out.println("ARMAS: \n" + laserSimple.toString() + "\n" + misilPlasma.toString() + "\n"
+                + laserDestructor.toString());
     }
 
-    public void Blindaje(){
-
+    public void Blindaje() {
+        System.out.println("BLINDAJE \n"
+                + blindajeSimple.toString() + "\n" + blindajeReforzado.toString() + "\n"
+                + blindajeFortaleza.toString());
     }
 
-    public void Cabina(){
-
+    public void Cabina() {
+        System.out.println("CABINA \n" + cabinaUnPiloto.toString() + "\n" + cabinaPequeña.toString() + "\n"
+                + cabinaEjercito.toString());
     }
 
-    public void SistemaPropulcion(){
-        
+    public void SistemaPropulcion() {
+        System.out.println("SISTEMA DE PROPULSION \n" + PropulsionIntercontinental.toString() + "\n"
+                + PropulsionInterplanetaria.toString() + "\n" + PropulsionIntergalactica.toString());
     }
- } 
+}
