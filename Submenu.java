@@ -24,15 +24,18 @@ public class Submenu {
 
 
     public void setPresupuesto() {
-        do {
+        
+        System.out.println("\n***BIENVENIDO A SPACESHIP FACTORY***" +  "\n Porfavor ingrese el presupuesto de la nave a cotizar para poder empezar a ayudarlo"); 
+            
             try {
-                System.out.print("Ingrese el presupuesto: ");
-                presupuesto = Integer.parseInt(numeros.nextLine());
-                valido = true;
-            } catch (NumberFormatException e) {
-                System.out.println("Error: Debe ingresar un número entero válido.");
+
+                presupuesto = numeros.nextInt();
+                
+            } catch (InputMismatchException e) {
+                System.out.println("No puedes introducir letas intentalo de nuevo");
+                numeros.nextLine();
+                setPresopuesto();
             }
-        } while (!valido);
 
         menuS();
     }
