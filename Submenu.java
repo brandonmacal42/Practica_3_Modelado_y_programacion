@@ -27,11 +27,11 @@ public class Submenu{
                 System.out.println("\n***BIENVENIDO A SPACESHIP FACTORY***" +  "\n Porfavor ingrese el presupuesto de la nave a cotizar para poder empezar a ayudarlo"); 
             }
         } while (true);
-        System.out.println("\n***BIENVENIDO A SPACESHIP FACTORY***"
-        + "\n\n1. ARMAS" 
-        + "\n\n2. BLINDAJE"
-        + "\n\n3. CABINA"
-        + "\n\n4. SISTEMA DE PROPULSION");
+        System.out.println("***BIENVENIDO A SPACESHIP FACTORY***");
+        System.out.println("1. ARMAS");
+        System.out.println("2. BLINDAJE");
+        System.out.println("3. CABINA");
+        System.out.println("4. SISTEMA DE PROPULSION");
         do{
             
             while (true){
