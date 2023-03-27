@@ -15,7 +15,7 @@ public class Submenu{
         Sistemaopcion = 0;
     }
 
-    public void menuS(){
+   public void menuS(){
         do {
             System.out.println("\n***BIENVENIDO A SPACESHIP FACTORY***" +  "\n Porfavor ingrese el presupuesto de la nave a cotizar para poder empezar a ayudarlo"); 
             try {
@@ -27,26 +27,14 @@ public class Submenu{
                 System.out.println("\n***BIENVENIDO A SPACESHIP FACTORY***" +  "\n Porfavor ingrese el presupuesto de la nave a cotizar para poder empezar a ayudarlo"); 
             }
         } while (true);
+        do{
         System.out.println("***BIENVENIDO A SPACESHIP FACTORY***");
         System.out.println("1. ARMAS");
         System.out.println("2. BLINDAJE");
         System.out.println("3. CABINA");
         System.out.println("4. SISTEMA DE PROPULSION");
-        do{
-            
-            while (true){
-                try {
-                    String opcionUsuario = sc.nextLine();
-                    opcion = Integer.parseInt(opcionUsuario);
-                    break;
-                }catch (NumberFormatException ex){
-                    System.out.println("Ingresa una opcion valida."
-                        + "\n1.- Combo 1"
-                        + "\n2.- Combo 2"
-                        + "\n3.- Combo 3"
-                        + "\n0.- Salir");
-                }
-            }
+        System.out.println("5. Terminar Orden");
+        
 
             switch(opcion){
                 case 1:
@@ -70,14 +58,15 @@ public class Submenu{
                     naveGuerra.muestraComida();
                     System.out.println("Total: " + (float)naveGuerra.obtenCosto());
                     break;
-                case 0:
+                case 5:
                     break;
                 default:
                     System.out.println("Ingresa una opcion valida.");
                     break;
             }
-        }while(opcion != 0);
+        }while(opcion != 5);
     }
+
 
     public void Armas(){
         do {
