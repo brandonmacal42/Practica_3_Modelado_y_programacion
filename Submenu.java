@@ -29,9 +29,9 @@ public class Submenu{
         } while (true);
         System.out.println("\n***BIENVENIDO A SPACESHIP FACTORY***"
         + "\n\n1. ARMAS" 
-        + "\n\n2. BLINDAJE \nBlindaje Simple | $2000 \nBlindaje Reforzado | 2550 \nBlindaje Fortaleza | 3450"
-        + "\n\n3. CABINA \nCabina para un piloto | $1200\nCabina Tripulación pequeña | $1550 \nCabina Ejercito | $3800 "
-        + "\n\n4. SISTEMA DE PROPULSION \nSistema de propulsion intercontinental | $2000 \nSistema de propulsion interplanetario | $3000 \nSistema de propulsion intergalactico | $5000");
+        + "\n\n2. BLINDAJE"
+        + "\n\n3. CABINA"
+        + "\n\n4. SISTEMA DE PROPULSION");
         do{
             
             while (true){
@@ -112,9 +112,9 @@ public class Submenu{
     public void SistemaPropulcion(){
         do {
             System.out.println("SISTEMA DE PROPULSION");
-            System.out.println("1. Arma Laser Simple | $1590 ");
-            System.out.println("2. Arma Misil de Plasma | $1720");
-            System.out.println("3. Arma Laser Destructor de Planetas | 4500");
+            System.out.println("1. Sistema de propulsion intercontinental | $2000");
+            System.out.println("2. Sistema de propulsion interplanetario | $3000");
+            System.out.println("3. Sistema de propulsion intergalactico | $5000");
             System.out.println("4. Salir");
         } while (Armaopcion != 4);
     }
