@@ -13,5 +13,9 @@ public class PropulsionIntercontinental extends SistemaPropulsion{
 	public String descripcion() {
 		return "Sistema de propulsion para hacer viajes cortos sin poder viajer de planeta a planeta";
 	}
-	
+
+	@Override
+	public int velocidad(){
+		return 202;
+	}
 }

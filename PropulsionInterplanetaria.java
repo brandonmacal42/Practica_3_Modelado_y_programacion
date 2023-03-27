@@ -13,4 +13,8 @@ public class PropulsionInterplanetaria extends SistemaPropulsion{
 	public String descripcion() {
 		return "Sistema de propulsion interplanetario capaz de viajar de planeta a planeta";
 	}
+	@Override
+	public int velocidad(){
+		return 3200;
+	}
 }

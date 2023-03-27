@@ -13,4 +13,8 @@ public class PropulsionIntergalactica extends SistemaPropulsion{
 	public String descripcion() {
 		return "Sistema de Propulsion intergalactico capaz de viajar a cualquier parte de la galaxia";
 	}
+	@Override
+	public int velocidad(){
+		return 12220;
+	}
 }

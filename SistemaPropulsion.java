@@ -7,4 +7,6 @@ public abstract class SistemaPropulsion implements Componente{
 	public String toString(){
 		return nombre() +  " |  $" + precio() + " | " + descripcion();
 	}
+	public abstract int velocidad();
+
 }
