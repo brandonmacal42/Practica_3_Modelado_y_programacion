@@ -13,4 +13,9 @@ public class ArmaLaserDestructor extends Armas{
 	public String descripcion() {
 		return "Arma laser con un poder inmenso capas de destruir un planeta";
 	}
+
+	@Override 
+	public int ataque(){
+		return 120;
+	}
 }

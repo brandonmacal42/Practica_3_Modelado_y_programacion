@@ -13,4 +13,8 @@ public class ArmaMisilPlasma extends Armas {
 	public String descripcion() {
 		return "Arma misil capas de dañar un blindaje reforzado";
 	}
+	@Override 
+	public int ataque(){
+		return 50;
+	}
 }

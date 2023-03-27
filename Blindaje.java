@@ -7,4 +7,6 @@ public abstract class Blindaje implements Componente{
 	public String toString(){
 		return nombre() +  " |  $" + precio() + " | " + descripcion();
 	}
+
+	public abstract int defensa();
 }
