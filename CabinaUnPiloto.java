@@ -14,4 +14,8 @@ public class CabinaUnPiloto extends Cabina{
 		return "Cabina para un solo piloto";
 	}
 	
+	@Override
+	public int peso(){
+		return 100;
+	}
 }

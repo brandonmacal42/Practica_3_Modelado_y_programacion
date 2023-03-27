@@ -13,4 +13,9 @@ public class CabinaPequeña extends Cabina{
 	public String descripcion() {
 		return "Cabina pequeña capaz de transportar a un pequeño escuadron";
 	}
+
+	@Override
+	public int peso(){
+		return 200;
+	}
 }

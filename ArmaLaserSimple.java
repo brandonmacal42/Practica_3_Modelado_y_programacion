@@ -15,6 +15,6 @@ public class ArmaLaserSimple extends Armas{
 	}
 	@Override 
 	public int ataque(){
-		return 10;
+		return 100;
 	}
 }

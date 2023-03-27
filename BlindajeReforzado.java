@@ -14,4 +14,8 @@ public class BlindajeReforzado extends Blindaje{
 		return "Blindaje reforzado capaz de resistir algunos misiles de plasma";
 	}
 	
+	@Override 
+	public int defensa(){
+		return 100;
+	}
 }

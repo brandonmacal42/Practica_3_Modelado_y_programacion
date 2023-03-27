@@ -13,4 +13,10 @@ public class BlindajeFortaleza extends Blindaje{
 	public String descripcion() {
 		return "Blindaje capaz de resistir varios dispaos o misiles de plasma";
 	}
+
+	@Override
+	public int defensa(){
+		return 2000;
+	}
+
 }

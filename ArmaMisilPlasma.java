@@ -15,6 +15,6 @@ public class ArmaMisilPlasma extends Armas {
 	}
 	@Override 
 	public int ataque(){
-		return 50;
+		return 550;
 	}
 }

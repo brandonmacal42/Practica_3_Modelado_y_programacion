@@ -16,6 +16,6 @@ public class ArmaLaserDestructor extends Armas{
 
 	@Override 
 	public int ataque(){
-		return 120;
+		return 2000;
 	}
 }

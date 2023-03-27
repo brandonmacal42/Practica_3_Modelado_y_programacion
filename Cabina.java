@@ -7,4 +7,6 @@ public abstract class Cabina implements Componente{
 	public String toString(){
 		return nombre() +  " |  $" + precio() + " | " + descripcion();
 	}
+
+	public abstract int peso();
 }
