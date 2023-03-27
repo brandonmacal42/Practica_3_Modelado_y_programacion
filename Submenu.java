@@ -107,4 +107,8 @@ public class Submenu{
             System.out.println("4. Salir");
         } while (Armaopcion != 4);
     }
+    
+    public void NaveEstadisticas(){
+        
+    }
  } 
