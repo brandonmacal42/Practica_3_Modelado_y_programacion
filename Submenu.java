@@ -1,22 +1,13 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Submenu {
 
     CheemsMecanico cheems = new CheemsMecanico();
-    Scanner sc = new Scanner(System.in);
+    Scanner numeros = new Scanner(System.in);
     int opcion, presupuesto, Armaopcion, Blindajeopcion, Cabinaopcion, Sistemaopcion, Ataque, Defensa, Velocidad;
-    Componente laserSimple = new ArmaLaserSimple();
-    Componente misilPlasma = new ArmaMisilPlasma();
-    Componente laserDestructor = new ArmaLaserDestructor();
-    Componente blindajeFortaleza = new BlindajeFortaleza();
-    Componente blindajeReforzado = new BlindajeReforzado();
-    Componente blindajeSimple = new BlindajeSimple();
-    Componente cabinaEjercito = new CabinaEjercito();
-    Componente cabinaPequeña = new CabinaPequeña();
-    Componente cabinaUnPiloto = new CabinaUnPiloto();
-    Componente PropulsionIntercontinental = new PropulsionIntercontinental();
-    Componente PropulsionIntergalactica = new PropulsionIntergalactica();
-    Componente PropulsionInterplanetaria = new PropulsionInterplanetaria();
+    double Peso;
+    boolean valido = false;
 
     public Submenu() {
         opcion = 0;
@@ -31,61 +22,62 @@ public class Submenu {
         Peso = 0.00;
     }
 
-   public void menuS(){
+
+    public void setPresupuesto() {
         do {
-            System.out.println("\n***BIENVENIDO A SPACESHIP FACTORY***" +  "\n Porfavor ingrese el presupuesto de la nave a cotizar para poder empezar a ayudarlo"); 
+            try {
+                System.out.print("Ingrese el presupuesto: ");
+                presupuesto = Integer.parseInt(numeros.nextLine());
+                valido = true;
+            } catch (NumberFormatException e) {
+                System.out.println("Error: Debe ingresar un número entero válido.");
+            }
+        } while (!valido);
+
+        menuS();
+    }
+
+    public void menuS() {
+        do {
+            System.out.println("***BIENVENIDO A SPACESHIP FACTORY***");
+            System.out.println("1. ARMAS");
+            System.out.println("2. BLINDAJE");
+            System.out.println("3. CABINA");
+            System.out.println("4. SISTEMA DE PROPULSION");
+            System.out.println("5. Terminar Orden");
 
             try {
 
-                presupuesto = numeros.nextInt();
-                
+                opcion = numeros.nextInt();
+
             } catch (InputMismatchException e) {
-                System.out.println("No puedes introducir letas intentalo de nuevo");
+                System.out.println("No puedes introducir letras intentalo de nuevo");
                 numeros.nextLine();
-                menuS();
             }
-            
-        do{
-        System.out.println("***BIENVENIDO A SPACESHIP FACTORY***");
-        System.out.println("1. ARMAS");
-        System.out.println("2. BLINDAJE");
-        System.out.println("3. CABINA");
-        System.out.println("4. SISTEMA DE PROPULSION");
-        System.out.println("5. Terminar Orden");
-        
-             try {
 
-            opcion = numeros.nextInt();
-            
-        } catch (InputMismatchException e) {
-            System.out.println("No puedes introducir letras intentalo de nuevo");
-            numeros.nextLine();
-        }
-
-            switch(opcion){
+            switch (opcion) {
                 case 1:
-                Armas();
-                break;
+                    Armas();
+                    break;
                 case 2:
-                Blindaje(); 
-                break;
+                    Blindaje();
+                    break;
                 case 3:
-                Cabina();
-                break;
+                    Cabina();
+                    break;
                 case 4:
-                SistemaPropulcion();
-                break;
+                    SistemaPropulsion();
+                    break;
                 case 5:
-                break;
+                    break;
                 default:
                     System.out.println("Ingresa una opcion valida.");
                     break;
             }
-        }while(opcion != 5);
+        } while (opcion != 5);
     }
 
-
-   public void Armas(){
+    public void Armas() {
         do {
             System.out.println("ARMAS");
             System.out.println("1. Arma Laser Simple | $1590 ");
@@ -96,7 +88,7 @@ public class Submenu {
             try {
 
                 Armaopcion = numeros.nextInt();
-                
+
             } catch (InputMismatchException e) {
                 System.out.println("No puedes introducir letras intentalo de nuevo");
                 numeros.nextLine();
@@ -105,7 +97,7 @@ public class Submenu {
         } while (Armaopcion != 4);
     }
 
-    public void Blindaje(){
+    public void Blindaje() {
         do {
             System.out.println("BLINDAJE");
             System.out.println("1. Blindaje Simple | $2000");
@@ -116,16 +108,16 @@ public class Submenu {
             try {
 
                 Blindajeopcion = numeros.nextInt();
-                
+
             } catch (InputMismatchException e) {
                 System.out.println("No puedes introducir letras intentalo de nuevo");
                 numeros.nextLine();
             }
-    
+
         } while (Blindajeopcion != 4);
     }
 
-    public void Cabina(){
+    public void Cabina() {
         do {
             System.out.println("CABINA");
             System.out.println("1. Cabina para un piloto | $1200");
@@ -136,16 +128,16 @@ public class Submenu {
             try {
 
                 Cabinaopcion = numeros.nextInt();
-                
+
             } catch (InputMismatchException e) {
                 System.out.println("No puedes introducir letras intentalo de nuevo");
                 numeros.nextLine();
             }
-    
+
         } while (Cabinaopcion != 4);
     }
 
-    public void SistemaPropulcion(){
+    public void SistemaPropulsion() {
         do {
             System.out.println("SISTEMA DE PROPULSION");
             System.out.println("1. Sistema de propulsion intercontinental | $2000");
@@ -156,16 +148,16 @@ public class Submenu {
             try {
 
                 Sistemaopcion = numeros.nextInt();
-                
+
             } catch (InputMismatchException e) {
                 System.out.println("No puedes introducir letras intentalo de nuevo");
                 numeros.nextLine();
             }
-    
+
         } while (Sistemaopcion != 4);
     }
-    
-    public void NaveEstadisticas(){
-        
+
+    public void NaveEstadisticas() {
+
     }
- } 
+}
