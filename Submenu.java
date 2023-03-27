@@ -92,9 +92,9 @@ public class Submenu{
     public void Blindaje(){
         do {
             System.out.println("BLINDAJE");
-            System.out.println("1. Arma Laser Simple | $1590 ");
-            System.out.println("2. Arma Misil de Plasma | $1720");
-            System.out.println("3. Arma Laser Destructor de Planetas | 4500");
+            System.out.println("1. Blindaje Simple | $2000");
+            System.out.println("2. Blindaje Reforzado | 2550");
+            System.out.println("3. Blindaje Fortaleza | 3450");
             System.out.println("4. Salir");
         } while (Armaopcion != 4);
     }
