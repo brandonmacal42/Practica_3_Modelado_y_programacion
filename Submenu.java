@@ -4,8 +4,7 @@ public class Submenu {
 
     CheemsMecanico cheems = new CheemsMecanico();
     Scanner sc = new Scanner(System.in);
-    int opcion;
-    int presupuesto;
+    int opcion, presupuesto, Armaopcion, Blindajeopcion, Cabinaopcion, Sistemaopcion;
     Componente laserSimple = new ArmaLaserSimple();
     Componente misilPlasma = new ArmaMisilPlasma();
     Componente laserDestructor = new ArmaLaserDestructor();
@@ -22,6 +21,10 @@ public class Submenu {
     public Submenu() {
         opcion = 0;
         presupuesto = 0;
+        Armaopcion = 0;
+        Blindajeopcion = 0;
+        Cabinaopcion = 0;
+        Sistemaopcion = 0;
     }
 
     public void menuS(){
@@ -92,24 +95,43 @@ public class Submenu {
         }while(opcion != 0);
     }
 
-    public void Armas() {
-        System.out.println("ARMAS: \n" + laserSimple.toString() + "\n" + misilPlasma.toString() + "\n"
-                + laserDestructor.toString());
+    public void Armas(){
+        do {
+            System.out.println("ARMAS");
+            System.out.println("1. Arma Laser Simple | $1590 ");
+            System.out.println("2. Arma Misil de Plasma | $1720");
+            System.out.println("3. Arma Laser Destructor de Planetas | 4500");
+            System.out.println("4. Salir");
+        } while (Armaopcion != 4);
     }
 
-    public void Blindaje() {
-        System.out.println("BLINDAJE \n"
-                + blindajeSimple.toString() + "\n" + blindajeReforzado.toString() + "\n"
-                + blindajeFortaleza.toString());
+    public void Blindaje(){
+        do {
+            System.out.println("BLINDAJE");
+            System.out.println("1. Blindaje Simple | $2000");
+            System.out.println("2. Blindaje Reforzado | 2550");
+            System.out.println("3. Blindaje Fortaleza | 3450");
+            System.out.println("4. Salir");
+        } while (Armaopcion != 4);
     }
 
-    public void Cabina() {
-        System.out.println("CABINA \n" + cabinaUnPiloto.toString() + "\n" + cabinaPequeña.toString() + "\n"
-                + cabinaEjercito.toString());
+    public void Cabina(){
+        do {
+            System.out.println("CABINA");
+            System.out.println("1. Cabina para un piloto | $1200");
+            System.out.println("2. Cabina Tripulación pequeña | $1550");
+            System.out.println("3. Cabina Ejercito | $3800");
+            System.out.println("4. Salir");
+        } while (Armaopcion != 4);
     }
 
-    public void SistemaPropulcion() {
-        System.out.println("SISTEMA DE PROPULSION \n" + PropulsionIntercontinental.toString() + "\n"
-                + PropulsionInterplanetaria.toString() + "\n" + PropulsionIntergalactica.toString());
+    public void SistemaPropulcion(){
+        do {
+            System.out.println("SISTEMA DE PROPULSION");
+            System.out.println("1. Sistema de propulsion intercontinental | $2000");
+            System.out.println("2. Sistema de propulsion interplanetario | $3000");
+            System.out.println("3. Sistema de propulsion intergalactico | $5000");
+            System.out.println("4. Salir");
+        } while (Armaopcion != 4);
     }
-}
+ } 
