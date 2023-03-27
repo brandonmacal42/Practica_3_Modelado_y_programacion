@@ -85,13 +85,23 @@ public class Submenu {
     }
 
 
-    public void Armas(){
+   public void Armas(){
         do {
             System.out.println("ARMAS");
             System.out.println("1. Arma Laser Simple | $1590 ");
             System.out.println("2. Arma Misil de Plasma | $1720");
             System.out.println("3. Arma Laser Destructor de Planetas | 4500");
             System.out.println("4. Salir");
+
+            try {
+
+                Armaopcion = numeros.nextInt();
+                
+            } catch (InputMismatchException e) {
+                System.out.println("No puedes introducir letras intentalo de nuevo");
+                numeros.nextLine();
+            }
+
         } while (Armaopcion != 4);
     }
 
@@ -102,7 +112,17 @@ public class Submenu {
             System.out.println("2. Blindaje Reforzado | 2550");
             System.out.println("3. Blindaje Fortaleza | 3450");
             System.out.println("4. Salir");
-        } while (Armaopcion != 4);
+
+            try {
+
+                Blindajeopcion = numeros.nextInt();
+                
+            } catch (InputMismatchException e) {
+                System.out.println("No puedes introducir letras intentalo de nuevo");
+                numeros.nextLine();
+            }
+    
+        } while (Blindajeopcion != 4);
     }
 
     public void Cabina(){
@@ -112,7 +132,17 @@ public class Submenu {
             System.out.println("2. Cabina Tripulación pequeña | $1550");
             System.out.println("3. Cabina Ejercito | $3800");
             System.out.println("4. Salir");
-        } while (Armaopcion != 4);
+
+            try {
+
+                Cabinaopcion = numeros.nextInt();
+                
+            } catch (InputMismatchException e) {
+                System.out.println("No puedes introducir letras intentalo de nuevo");
+                numeros.nextLine();
+            }
+    
+        } while (Cabinaopcion != 4);
     }
 
     public void SistemaPropulcion(){
@@ -122,7 +152,17 @@ public class Submenu {
             System.out.println("2. Sistema de propulsion interplanetario | $3000");
             System.out.println("3. Sistema de propulsion intergalactico | $5000");
             System.out.println("4. Salir");
-        } while (Armaopcion != 4);
+
+            try {
+
+                Sistemaopcion = numeros.nextInt();
+                
+            } catch (InputMismatchException e) {
+                System.out.println("No puedes introducir letras intentalo de nuevo");
+                numeros.nextLine();
+            }
+    
+        } while (Sistemaopcion != 4);
     }
     
     public void NaveEstadisticas(){
