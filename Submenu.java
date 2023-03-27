@@ -4,7 +4,7 @@ public class Submenu {
 
     CheemsMecanico cheems = new CheemsMecanico();
     Scanner sc = new Scanner(System.in);
-    int opcion, presupuesto, Armaopcion, Blindajeopcion, Cabinaopcion, Sistemaopcion;
+    int opcion, presupuesto, Armaopcion, Blindajeopcion, Cabinaopcion, Sistemaopcion, Ataque, Defensa, Velocidad;
     Componente laserSimple = new ArmaLaserSimple();
     Componente misilPlasma = new ArmaMisilPlasma();
     Componente laserDestructor = new ArmaLaserDestructor();
@@ -25,6 +25,10 @@ public class Submenu {
         Blindajeopcion = 0;
         Cabinaopcion = 0;
         Sistemaopcion = 0;
+        Ataque = 0;
+        Defensa = 0;
+        Velocidad = 0;
+        Peso = 0.00;
     }
 
    public void menuS(){
