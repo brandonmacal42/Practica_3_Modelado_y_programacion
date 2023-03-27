@@ -30,15 +30,17 @@ public class Submenu {
    public void menuS(){
         do {
             System.out.println("\n***BIENVENIDO A SPACESHIP FACTORY***" +  "\n Porfavor ingrese el presupuesto de la nave a cotizar para poder empezar a ayudarlo"); 
+            
+
             try {
-                String opcionUsuario = sc.nextLine();
-                    presupuesto = Integer.parseInt(opcionUsuario);
-                    break;
+
+                presupuesto = numeros.nextInt();
                 
-            } catch (NumberFormatException e) {
-                System.out.println("\n***BIENVENIDO A SPACESHIP FACTORY***" +  "\n Porfavor ingrese el presupuesto de la nave a cotizar para poder empezar a ayudarlo"); 
+            } catch (InputMismatchException e) {
+                System.out.println("No puedes introducir letas intentalo de nuevo");
+                numeros.nextLine();
             }
-        } while (true);
+        } while (presupuesto != 0);
         do{
         System.out.println("***BIENVENIDO A SPACESHIP FACTORY***");
         System.out.println("1. ARMAS");
