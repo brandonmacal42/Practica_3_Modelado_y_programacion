@@ -102,9 +102,9 @@ public class Submenu{
     public void Cabina(){
         do {
             System.out.println("CABINA");
-            System.out.println("1. Arma Laser Simple | $1590 ");
-            System.out.println("2. Arma Misil de Plasma | $1720");
-            System.out.println("3. Arma Laser Destructor de Planetas | 4500");
+            System.out.println("1. Cabina para un piloto | $1200");
+            System.out.println("2. Cabina Tripulación pequeña | $1550");
+            System.out.println("3. Cabina Ejercito | $3800");
             System.out.println("4. Salir");
         } while (Armaopcion != 4);
     }
