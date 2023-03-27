@@ -34,7 +34,7 @@ public class Submenu {
             } catch (InputMismatchException e) {
                 System.out.println("No puedes introducir letas intentalo de nuevo");
                 numeros.nextLine();
-                setPresopuesto();
+                setPresupuesto();
             }
 
         menuS();
@@ -67,6 +67,7 @@ public class Submenu {
                     break;
                 case 3:
                     Cabina();
+                    
                     break;
                 case 4:
                     SistemaPropulsion();
@@ -97,6 +98,19 @@ public class Submenu {
                 numeros.nextLine();
             }
 
+            switch (Armaopcion) {
+                case 1:
+                break;
+                case 2:
+                break;
+                case 3:
+                break;
+                case 4:
+                break;
+                default:
+                    break;
+            }
+
         } while (Armaopcion != 4);
     }
 
@@ -115,6 +129,19 @@ public class Submenu {
             } catch (InputMismatchException e) {
                 System.out.println("No puedes introducir letras intentalo de nuevo");
                 numeros.nextLine();
+            }
+
+            switch (Blindajeopcion) {
+                case 1:
+                break;
+                case 2:
+                break;
+                case 3:
+                break;
+                case 4:
+                break;
+                default:
+                    break;
             }
 
         } while (Blindajeopcion != 4);
@@ -137,6 +164,19 @@ public class Submenu {
                 numeros.nextLine();
             }
 
+            switch (Cabinaopcion) {
+                case 1:
+                break;
+                case 2:
+                break;
+                case 3:
+                break;
+                case 4:
+                break;
+                default:
+                    break;
+            }
+
         } while (Cabinaopcion != 4);
     }
 
@@ -155,6 +195,19 @@ public class Submenu {
             } catch (InputMismatchException e) {
                 System.out.println("No puedes introducir letras intentalo de nuevo");
                 numeros.nextLine();
+            }
+
+            switch (Sistemaopcion) {
+                case 1:
+                break;
+                case 2:
+                break;
+                case 3:
+                break;
+                case 4:
+                break;
+                default:
+                    break;
             }
 
         } while (Sistemaopcion != 4);
