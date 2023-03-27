@@ -43,8 +43,9 @@ public class Submenu {
             } catch (InputMismatchException e) {
                 System.out.println("No puedes introducir letas intentalo de nuevo");
                 numeros.nextLine();
+                menuS();
             }
-        } while (presupuesto != 0);
+            
         do{
         System.out.println("***BIENVENIDO A SPACESHIP FACTORY***");
         System.out.println("1. ARMAS");
