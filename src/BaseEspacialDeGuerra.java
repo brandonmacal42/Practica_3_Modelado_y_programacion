@@ -4,7 +4,7 @@ public class BaseEspacialDeGuerra extends ArmadoBuilder{
 
 
     public void agregarArma(){
-        componentes.add(new ArmaLaseDestructor());
+        componentes.add(new ArmaLaserDestructor());
     }
 
     public void agregarCabina(){
