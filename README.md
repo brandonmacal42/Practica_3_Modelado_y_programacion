@@ -5,7 +5,7 @@ Equipo Dinamita
 -Moisés Corpus García 116005560
 -Brandon Brayan Macal Cruz 318085470
 
-Para poder ejecutar la practica2 correctamente abrir la terminal dentro de la carpeta src una vez ya abierta ejecutar el siguiente comando en la terminal
+Para poder ejecutar la practica3 correctamente abrir la terminal dentro de la carpeta src una vez ya abierta ejecutar el siguiente comando en la terminal
 
 javac Main.java
 
