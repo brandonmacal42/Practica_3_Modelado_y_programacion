@@ -8,7 +8,7 @@ public abstract class Cabina implements Componentes{
 		return nombreCabina;
 	}
 
-	public int Ataque(){
+	public int getAtaque(){
 		return AtaqueCabina;
 	}
 

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Fabrica extends ArmadoBuilder{
+public class NaveIndividualCombate extends ArmadoBuilder{
 
 
     public void agregarArma(){

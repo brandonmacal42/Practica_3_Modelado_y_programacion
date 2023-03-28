@@ -8,7 +8,7 @@ public abstract class SistemaPropulsion implements Componentes{
 		return nombrePropulsion;
 	}
 
-	public int Ataque(){
+	public int getAtaque(){
 		return AtaquePropulsion;
 	}
 

@@ -1,18 +1,12 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-/**Nave naveGuerra = new NaveEspacialGuerra();
-                    System.out.println("\nComida Combo 3");
-                    cheems.armaNaveGuerra(naveGuerra);
-                    naveGuerra.muestraComida();
-                    System.out.println("Total: " + (float)naveGuerra.obtenCosto());
-                    */
-
 public class Submenu {
 
     Proceso p = new Proceso();
+    NaveIndividualCombate NIC = new NaveIndividualCombate();
     Scanner numeros = new Scanner(System.in);
-    int opcion, presupuesto, Armaopcion, Blindajeopcion, Cabinaopcion, Sistemaopcion, Ataque, Defensa, Velocidad;
+    int opcion, presupuesto, Armaopcion, Blindajeopcion, Cabinaopcion, Sistemaopcion, Ataque, Defensa, Velocidad, nave;
     double Peso;
     boolean valido = false;
 
@@ -83,7 +77,7 @@ public class Submenu {
                 case 5:
                 Nave();
                     break;
-                    case 6:
+                case 6:
                     break;
                 default:
                     System.out.println("Ingresa una opcion valida.");
@@ -226,6 +220,41 @@ public class Submenu {
 
     public void Nave(){
 
+        do {
+            
+            System.out.println("Naves por prederteminado, seleccione la suya");
+            System.out.println("1. Nave individual de combate");
+            System.out.println("2. Nave Militar de transporte");
+            System.out.println("3. Base Espacial de guerra");
+            System.out.println("4. Confirmar orden");
+            System.out.println("5. Salir");
+
+            try {
+                nave = numeros.nextInt();
+            } catch (Exception e) {
+                System.out.println("No puedes introducir letras intentalo de nuevo");
+                numeros.nextLine();
+            }
+
+            switch(nave){
+                case 1:
+                System.out.println("\n" + "Nave Individual de Combate" + "\n");
+                //p.NaveSencilla(NIC);
+                //NIC.getArmado();
+                System.out.println("\n" + "Total: $" + (float)NIC.CostoFinal());
+                break;
+                case 2:
+                break;
+                case 3:
+                break;
+                case 4:
+                break;
+                case 5:
+                break;
+                default:
+                break;
+            }
+        } while (nave != 4 || nave != 5);
     }
 
     public void NaveEstadisticas() {

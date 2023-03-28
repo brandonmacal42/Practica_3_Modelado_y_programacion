@@ -8,7 +8,7 @@ public abstract class Blindaje implements Componentes{
 		return nombreBlindaje;
 	}
 
-	public int Ataque(){
+	public int getAtaque(){
 		return AtaqueBlindaje;
 	}
 

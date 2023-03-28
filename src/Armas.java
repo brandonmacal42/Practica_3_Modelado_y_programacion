@@ -8,7 +8,7 @@ public abstract class Armas implements Componentes{
 		return nombreArma;
 	}
 
-	public int Ataque(){
+	public int getAtaque(){
 		return AtaqueArma;
 	}
 

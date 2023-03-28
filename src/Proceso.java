@@ -1,10 +1,32 @@
+import java.security.PublicKey;
 
 public class Proceso{
 
-    public void procesoArmado(ArmadoBuilder componentes){
-        componentes.agregarArma();
-        componentes.agregarCabina();
-        componentes.agregarBlindaje();
-        componentes.agregarSistemaPropulsion();
+    public void NaveSencilla(ArmadoBuilder com){
+        com.agregarArma();
+        com.agregarCabina();
+        com.agregarBlindaje();
+        com.agregarSistemaPropulsion();
+    }
+
+    public void NaveTransporteMilitar(ArmadoBuilder com){
+        com.agregarArma();
+        com.agregarCabina();
+        com.agregarBlindaje();
+        com.agregarSistemaPropulsion();
+    }
+   
+    public void BaseGuerra(ArmadoBuilder com){
+        com.agregarArma();
+        com.agregarCabina();
+        com.agregarBlindaje();
+        com.agregarSistemaPropulsion();
+    }
+
+    public void NavePersonalizada(ArmadoBuilder com){
+        com.agregarArma();
+        com.agregarCabina();
+        com.agregarBlindaje();
+        com.agregarSistemaPropulsion();
     }
 }

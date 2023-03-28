@@ -8,24 +8,24 @@ public abstract class ArmadoBuilder{
     public double CostoFinal(){
         float costototal = 0;
 
-        for(Componentes componentes : componentes){
-            costototal += componentes.getPrecio();
+        for(Componentes com : componentes){
+            costototal += com.getPrecio();
         }
         return costototal;
     }
 
     public void getArmado(){
    
-        for (Componentes componentes : componentes) {
-           System.out.print("Componente : " + componentes.getNombre());
-           System.out.println(", Precio : " + componentes.getPrecio());
+        for (Componentes com : componentes) {
+           System.out.print("Componente : " + com.getNombre());
+           System.out.println(", Precio : " + com.getPrecio());
         }		
      }
 
      public int getPesoT(){
         int pesototal = 0;
-        for (Componentes componentes : componentes) {
-            pesototal += componentes.getPeso();
+        for (Componentes com : componentes) {
+            pesototal += com.getPeso();
         }
         return pesototal;
      }
