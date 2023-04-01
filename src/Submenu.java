@@ -239,8 +239,8 @@ public class Submenu {
             switch(nave){
                 case 1:
                 System.out.println("\n" + "Nave Individual de Combate" + "\n");
-                //p.NaveSencilla(NIC);
-                //NIC.getArmado();
+                p.NaveSencilla(NIC);
+                NIC.getArmado();
                 System.out.println("\n" + "Total: $" + (float)NIC.CostoFinal());
                 break;
                 case 2:
@@ -254,7 +254,7 @@ public class Submenu {
                 default:
                 break;
             }
-        } while (nave != 4 || nave != 5);
+        } while (nave != 5);
     }
 
     public void NaveEstadisticas() {
