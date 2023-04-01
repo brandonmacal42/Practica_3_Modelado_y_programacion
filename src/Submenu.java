@@ -269,8 +269,10 @@ public class Submenu {
 
                 break;
                 case 4:
+                System.out.println("\n" + "Regrese pronto" + "\n");
                 break;
                 default:
+                System.out.println("Ingresa una opcion valida.");
                 break;
             }
         } while (nave != 4);
