@@ -226,7 +226,20 @@ public class Submenu {
             } else if(Sistemaopcion >= 5 || Sistemaopcion <= 0){
                 System.out.println("\n" + "Opción invalida intentalo de nuevo" + "\n");
             } else if (Sistemaopcion >= 1 && Sistemaopcion <= 3){
-            Su[0] = Sistemaopcion;    
+
+                if(Sistemaopcion == 1 && presupuesto[0] < 20000 || Sistemaopcion == 2 && presupuesto[0] < 10000 || Sistemaopcion == 3 && presupuesto[0] < 50000){
+                    System.out.println("\n" +"No tienes el suficiente presupuesto" +"\n");
+                } else if (Sistemaopcion == 1){
+                    Su[0] = Sistemaopcion;
+                    presupuesto[0] = presupuesto[0] - 20000;    
+                } else if(Sistemaopcion == 2){
+                    Su[0] = Sistemaopcion;
+                    presupuesto[0] = presupuesto[0] - 10000;    
+                } else if(Sistemaopcion == 3){
+                    Su[0] = Sistemaopcion;
+                    presupuesto[0] = presupuesto[0] - 50000;    
+                }
+                
             }
 
         } while (Sistemaopcion != 4);
