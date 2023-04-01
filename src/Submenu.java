@@ -140,17 +140,17 @@ public class Submenu {
                 System.out.println("\n" + "Opción invalida intentalo de nuevo" + "\n");
             } else if (Armaopcion >= 1 && Armaopcion <= 3){
 
-                if(Armaopcion == 1 && presupuesto[0] < 10000 || Armaopcion == 2 && presupuesto[0] < 60000 || Armaopcion == 3 && presupuesto[0] < 25000){
+                if(Armaopcion == 1 && presupuesto[0] < 9000 || Armaopcion == 2 && presupuesto[0] < 12000 || Armaopcion == 3 && presupuesto[0] < 20000){
                     System.out.println("\n" +"No tienes el suficiente presupuesto" +"\n");
                 } else if (Armaopcion == 1){
                     Au[0] = Armaopcion;
-                    presupuesto[0] = presupuesto[0] - 10000;    
+                    presupuesto[0] = presupuesto[0] - 9000;    
                 } else if(Armaopcion == 2){
                     Au[0] = Armaopcion;
-                    presupuesto[0] = presupuesto[0] - 60000;    
+                    presupuesto[0] = presupuesto[0] - 12000;    
                 } else if(Armaopcion == 3){
                     Au[0] = Armaopcion;
-                    presupuesto[0] = presupuesto[0] - 25000;    
+                    presupuesto[0] = presupuesto[0] - 20000;    
                 }
                 
             }
