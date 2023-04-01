@@ -228,8 +228,7 @@ public class Submenu {
             System.out.println("1. Nave individual de combate");
             System.out.println("2. Nave Militar de transporte");
             System.out.println("3. Base Espacial de guerra");
-            System.out.println("4. Confirmar orden");
-            System.out.println("5. Salir");
+            System.out.println("4. Salir o  Confirmar Orden");
 
             try {
                 nave = numeros.nextInt();
@@ -244,19 +243,37 @@ public class Submenu {
                 p.NaveSencilla(NIC);
                 NIC.getArmado();
                 System.out.println("\n" + "Total: $" + (float)NIC.CostoFinal());
+
+                if(presupuesto < NIC.CostoFinal())
+                System.out.println("\n" + "No se puede hacer el pago no le alcanza el presopuesto" + "\n");
+
                 break;
                 case 2:
+                System.out.println("\n" + "Nave Militar de Transporte" + "\n");
+                p.NaveTransporteMilitar(NMT);
+                NMT.getArmado();
+                System.out.println("\n" + "Total: $" + (float)NMT.CostoFinal());
+
+                if(presupuesto < NMT.CostoFinal())
+                System.out.println("\n" + "No se puede hacer el pago no le alcanza el presopuesto" + "\n");
+
                 break;
                 case 3:
+                System.out.println("\n" + "Base de Guerra Espacial" + "\n");
+                p.BaseGuerra(BEG);
+                BEG.getArmado();
+                System.out.println("\n" + "Total: $" + (float)BEG.CostoFinal());
+
+                if(presupuesto < BEG.CostoFinal())
+                System.out.println("\n" + "No se puede hacer el pago no le alcanza el presopuesto" + "\n");
+
                 break;
                 case 4:
-                break;
-                case 5:
                 break;
                 default:
                 break;
             }
-        } while (nave != 5);
+        } while (nave != 4);
     }
 
     public void NaveEstadisticas() {
