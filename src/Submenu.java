@@ -119,9 +119,9 @@ public class Submenu {
     public void Armas() {
         do {
             System.out.println("ARMAS");
-            System.out.println("1. Arma Laser Simple | $1590 ");
-            System.out.println("2. Arma Misil de Plasma | $1720");
-            System.out.println("3. Arma Laser Destructor de Planetas | 4500");
+            System.out.println("1. Arma Laser Simple | $9000 ");
+            System.out.println("2. Arma Misil de Plasma | $12000");
+            System.out.println("3. Arma Laser Destructor de Planetas | $20000");
             System.out.println("4. Salir");
             System.out.print("Ingresa opcion: ");
 
@@ -161,9 +161,9 @@ public class Submenu {
     public void Blindaje() {
         do {
             System.out.println("BLINDAJE");
-            System.out.println("1. Blindaje Simple | $2000");
-            System.out.println("2. Blindaje Reforzado | 2550");
-            System.out.println("3. Blindaje Fortaleza | 3450");
+            System.out.println("1. Blindaje Simple | $10000");
+            System.out.println("2. Blindaje Reforzado | $60000");
+            System.out.println("3. Blindaje Fortaleza | $25000");
             System.out.println("4. Salir");
             System.out.print("Ingresa opcion: ");
 
@@ -203,9 +203,9 @@ public class Submenu {
     public void Cabina() {
         do {
             System.out.println("CABINA");
-            System.out.println("1. Cabina para un piloto | $1200");
-            System.out.println("2. Cabina Tripulación pequeña | $1550");
-            System.out.println("3. Cabina Ejercito | $3800");
+            System.out.println("1. Cabina para un piloto | $5000");
+            System.out.println("2. Cabina Tripulación pequeña | $8000");
+            System.out.println("3. Cabina Ejercito | $20000");
             System.out.println("4. Salir");
             System.out.print("Ingresa opcion: ");
 
@@ -243,11 +243,11 @@ public class Submenu {
     }
 
     public void SistemaPropulsion() {
-        do {
+        do { 
             System.out.println("SISTEMA DE PROPULSION");
-            System.out.println("1. Sistema de propulsion intercontinental | $2000");
-            System.out.println("2. Sistema de propulsion interplanetario | $3000");
-            System.out.println("3. Sistema de propulsion intergalactico | $5000");
+            System.out.println("1. Sistema de propulsion intercontinental | $20000");
+            System.out.println("2. Sistema de propulsion interplanetario | $10000");
+            System.out.println("3. Sistema de propulsion intergalactico | $50000");
             System.out.println("4. Salir");
             System.out.print("Ingresa opcion: ");
 
