@@ -29,6 +29,31 @@ public abstract class ArmadoBuilder{
         }
         return pesototal;
      }
+    
+    public int getAtaqueT(){
+        int ataquetotal = 0;
+        for (Componentes com : componentes) {
+            ataquetotal += com.getAtaque();
+        }
+        return ataquetotal;
+     }
+
+     public int getDefensaT(){
+        int defensatotal = 0;
+        for (Componentes com : componentes) {
+            defensatotal += com.getDefensa();
+        }
+        return defensatotal;
+     }
+
+     public int getVelocidadT(){
+        int velocidadtotal = 0;
+        for (Componentes com : componentes) {
+            velocidadtotal += com.getVelocidad();
+        }
+        return velocidadtotal;
+     }
+    
 
     public abstract void agregarArma();
 
