@@ -95,7 +95,7 @@ public class Submenu {
                     break;
                 case 6:
                 NP[0] = new NavePersonalizada(Au[0], Cu[0], Bu[0], Su[0]);
-                System.out.println("\n" + "Nave Individual de Combate" + "\n");
+                System.out.println("\n" + "Nave" + "\n");
                 p.NavePersonalizada(NP[0]);
                 NP[0].getArmado();
                 System.out.println("\n" + "Total: $" + (float)NP[0].CostoFinal());
@@ -279,9 +279,5 @@ public class Submenu {
                 break;
             }
         } while (nave != 4);
-    }
-
-    public void NaveEstadisticas() {
-
     }
 }
