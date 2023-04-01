@@ -98,6 +98,11 @@ public class Submenu {
                 System.out.println("\n" + "Nave" + "\n");
                 p.NavePersonalizada(NP[0]);
                 NP[0].getArmado();
+                System.out.println("\n" + "Estadisticas Nave" + "\n");
+                System.out.println("Ataque: " + NP[0].getAtaqueT());
+                System.out.println("Defensa: " + NP[0].getDefensaT());
+                System.out.println("Velocidad: " + NP[0].getVelocidadT());
+                System.out.println("Peso: " + NP[0].getPesoT());
                 System.out.println("\n" + "Total: $" + (float)NP[0].CostoFinal());
                     break;
                 default:
