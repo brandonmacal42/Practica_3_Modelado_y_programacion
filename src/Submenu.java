@@ -168,7 +168,20 @@ public class Submenu {
             } else if(Blindajeopcion >= 5 || Blindajeopcion <= 0){
                 System.out.println("\n" + "Opción invalida intentalo de nuevo" + "\n");
             } else if (Blindajeopcion >= 1 && Blindajeopcion <= 3){
-            Bu[0] = Blindajeopcion;    
+
+                if(Blindajeopcion == 1 && presupuesto[0] < 10000 || Blindajeopcion == 2 && presupuesto[0] < 60000 || Blindajeopcion == 3 && presupuesto[0] < 25000){
+                    System.out.println("\n" +"No tienes el suficiente presupuesto" +"\n");
+                } else if (Blindajeopcion == 1){
+                    Bu[0] = Blindajeopcion;
+                    presupuesto[0] = presupuesto[0] - 10000;    
+                } else if(Blindajeopcion == 2){
+                    Bu[0] = Blindajeopcion;
+                    presupuesto[0] = presupuesto[0] - 60000;    
+                } else if(Blindajeopcion == 3){
+                    Bu[0] = Blindajeopcion;
+                    presupuesto[0] = presupuesto[0] - 25000;    
+                }
+                
             }
 
         } while (Blindajeopcion != 4);
