@@ -1,5 +1,5 @@
 /**
- * Clase ArmadoBuilder
+ * Clase Abstarct ArmadoBuilder
  * Contiene el patron de disenio Builder
  * @author Moisés Corpus García
  * @author Etni Sarai Castro Sierra
