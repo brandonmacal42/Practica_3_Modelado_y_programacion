@@ -261,7 +261,7 @@ public class Submenu {
                 System.out.println("Peso: " + NIC.getPesoT());
                 System.out.println("\n" + "Total: $" + (float)NIC.CostoFinal());
 
-                if(presupuesto < NIC.CostoFinal())
+                if(presupuesto[0] < NIC.CostoFinal())
                 System.out.println("\n" + "No se puede hacer el pago no le alcanza el presopuesto" + "\n");
 
                 break;
@@ -276,7 +276,7 @@ public class Submenu {
                 System.out.println("Peso: " + NMT.getPesoT());
                 System.out.println("\n" + "Total: $" + (float)NMT.CostoFinal());
 
-                if(presupuesto < NMT.CostoFinal())
+                if(presupuesto[0] < NMT.CostoFinal())
                 System.out.println("\n" + "No se puede hacer el pago no le alcanza el presopuesto" + "\n");
 
                 break;
@@ -291,7 +291,7 @@ public class Submenu {
                 System.out.println("Peso: " + BEG.getPesoT());
                 System.out.println("\n" + "Total: $" + (float)BEG.CostoFinal());
 
-                if(presupuesto < BEG.CostoFinal())
+                if(presupuesto[0] < BEG.CostoFinal())
                 System.out.println("\n" + "No se puede hacer el pago no le alcanza el presopuesto" + "\n");
 
                 break;
