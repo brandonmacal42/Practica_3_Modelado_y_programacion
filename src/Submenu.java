@@ -1,3 +1,12 @@
+/**
+ * Clase Submenu
+ *Contiene los menus para la nave
+ * @author Moisés Corpus García
+ * @author Etni Sarai Castro Sierra
+ * @author Brandon Brayan Macal Cruz
+ * @version 1.0 Marzo 2023
+ */
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -18,6 +27,9 @@ public class Submenu {
     double Peso;
     boolean valido = false;
 
+    /**
+    *Constructor para Submenu
+    */
     public Submenu() {
         opcion = 0;
         presupuesto = new int[1];
@@ -42,6 +54,9 @@ public class Submenu {
     }
 
 
+    /**
+    *Metodo que va a pedir el presupuesto de la nave disponible
+    */
     public void setPresupuesto() {
         
         System.out.println("\n***BIENVENIDO A SPACESHIP FACTORY***" +  "\n Porfavor ingrese el presupuesto de la nave a cotizar para poder empezar a ayudarlo"); 
@@ -59,6 +74,7 @@ public class Submenu {
         menuS();
     }
 
+    
     public void menuS() {
         do {
             System.out.println("***BIENVENIDO A SPACESHIP FACTORY***");
