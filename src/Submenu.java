@@ -9,17 +9,19 @@ public class Submenu {
     BaseEspacialDeGuerra BEG = new BaseEspacialDeGuerra();
     NavePersonalizada NP[] = new NavePersonalizada[1];
     Scanner numeros = new Scanner(System.in);
-    int opcion, presupuesto, Armaopcion, Blindajeopcion, Cabinaopcion, Sistemaopcion, Ataque, Defensa, Velocidad, nave;
+    int opcion, Armaopcion, Blindajeopcion, Cabinaopcion, Sistemaopcion, Ataque, Defensa, Velocidad, nave;
     int Au [];
     int Bu [];
     int Cu [];
     int Su [];
+    int presupuesto[];
     double Peso;
     boolean valido = false;
 
     public Submenu() {
         opcion = 0;
-        presupuesto = 0;
+        presupuesto = new int[1];
+        presupuesto[0] = 0;
         Armaopcion = 0;
         Blindajeopcion = 0;
         Cabinaopcion = 0;
@@ -46,7 +48,7 @@ public class Submenu {
             
             try {
 
-                presupuesto = numeros.nextInt();
+                presupuesto[0] = numeros.nextInt();
                 
             } catch (InputMismatchException e) {
                 System.out.println("No puedes introducir letas intentalo de nuevo");
