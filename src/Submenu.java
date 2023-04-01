@@ -5,6 +5,8 @@ public class Submenu {
 
     Proceso p = new Proceso();
     NaveIndividualCombate NIC = new NaveIndividualCombate();
+    NaveMilitarTransporte NMT = new NaveMilitarTransporte();
+    BaseEspacialDeGuerra BEG = new BaseEspacialDeGuerra();
     Scanner numeros = new Scanner(System.in);
     int opcion, presupuesto, Armaopcion, Blindajeopcion, Cabinaopcion, Sistemaopcion, Ataque, Defensa, Velocidad, nave;
     double Peso;
