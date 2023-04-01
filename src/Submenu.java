@@ -104,6 +104,8 @@ public class Submenu {
                 System.out.println("Velocidad: " + NP[0].getVelocidadT());
                 System.out.println("Peso: " + NP[0].getPesoT());
                 System.out.println("\n" + "Total: $" + (float)NP[0].CostoFinal());
+                System.out.println("\n" + "Pase a pagar en caja" + "\n");
+                System.out.println("Un gusto haberlo atendido");
                     break;
                 default:
                     System.out.println("Ingresa una opcion valida.");
