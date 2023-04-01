@@ -91,13 +91,24 @@ public abstract class ArmadoBuilder{
         return velocidadtotal;
      }
     
-
+    /**
+    * Metodo abstract para agregar la arma de la nave
+    */
     public abstract void agregarArma();
 
+    /**
+    * Metodo abstract para agregar el Blindaje de la nave
+    */
     public abstract void agregarBlindaje();
 
+    /**
+    * Metodo abstract para agregar el Sistema de Propulsion de la nave
+    */
     public abstract void agregarSistemaPropulsion();
     
+    /**
+    * Metodo abstract para agregar la Cabina de la nave
+    */
     public abstract void agregarCabina();
 
 }
