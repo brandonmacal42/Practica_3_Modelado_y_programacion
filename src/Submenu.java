@@ -74,7 +74,9 @@ public class Submenu {
         menuS();
     }
 
-    
+    /**
+    * Metodo para Armar la nave
+    */
     public void menuS() {
         do {
             System.out.println("***BIENVENIDO A SPACESHIP FACTORY***");
@@ -132,6 +134,9 @@ public class Submenu {
         } while (opcion != 6);
     }
 
+    /**
+    * Metodo menu para seleccionar una arma personalizada
+    */
     public void Armas() {
         do {
             System.out.println("ARMAS");
@@ -174,6 +179,9 @@ public class Submenu {
         } while (Armaopcion != 4);
     }
 
+    /**
+    * Metodo menu para seleccionar un blindaje personalizado
+    */
     public void Blindaje() {
         do {
             System.out.println("BLINDAJE");
@@ -216,6 +224,9 @@ public class Submenu {
         } while (Blindajeopcion != 4);
     }
 
+    /**
+    * Metodo menu para seleccionar una cabina personalizada
+    */
     public void Cabina() {
         do {
             System.out.println("CABINA");
@@ -258,6 +269,9 @@ public class Submenu {
         } while (Cabinaopcion != 4);
     }
 
+    /**
+    * Metodo menu para seleccionar un Sistema de propulsion personalizado
+    */
     public void SistemaPropulsion() {
         do { 
             System.out.println("SISTEMA DE PROPULSION");
@@ -300,6 +314,9 @@ public class Submenu {
         } while (Sistemaopcion != 4);
     }
 
+    /**
+    * Metodo menu para seleccionar una nave armada por default
+    */
    public void Nave(){
 
         do {
