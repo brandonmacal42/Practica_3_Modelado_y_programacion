@@ -1,4 +1,3 @@
-
 public class CabinaUnPiloto extends Cabina{
 
 	public CabinaUnPiloto(){

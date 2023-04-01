@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class NavePersonalizada extends ArmadoBuilder{
 
     int ArmaU, CabinaU, BlindajeU, SistemaU;

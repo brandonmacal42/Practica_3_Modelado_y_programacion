@@ -1,10 +1,10 @@
 import java.util.LinkedList;
-
-import javax.sound.midi.VoiceStatus;
-
+/*
+ * Clase object builer, esta va a construir la nave espacial
+ */
 public abstract class ArmadoBuilder{
     protected LinkedList<Componentes> componentes = new LinkedList<Componentes>();
-
+    
     public double CostoFinal(){
         float costototal = 0;
 

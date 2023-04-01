@@ -1,3 +1,6 @@
+/*
+ * Clase que con la que se construye el componente arma laser destructor, esta extiende de Armas
+ */
 public class ArmaLaserDestructor extends Armas{
 
 	public ArmaLaserDestructor(){
