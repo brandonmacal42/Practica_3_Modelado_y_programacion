@@ -230,7 +230,7 @@ public class Submenu {
         } while (Sistemaopcion != 4);
     }
 
-    public void Nave(){
+   public void Nave(){
 
         do {
             
@@ -252,6 +252,11 @@ public class Submenu {
                 System.out.println("\n" + "Nave Individual de Combate" + "\n");
                 p.NaveSencilla(NIC);
                 NIC.getArmado();
+                System.out.println("\n" + "Estadisticas Nave" + "\n");
+                System.out.println("Ataque: " + NIC.getAtaqueT());
+                System.out.println("Defensa: " + NIC.getDefensaT());
+                System.out.println("Velocidad: " + NIC.getVelocidadT());
+                System.out.println("Peso: " + NIC.getPesoT());
                 System.out.println("\n" + "Total: $" + (float)NIC.CostoFinal());
 
                 if(presupuesto < NIC.CostoFinal())
@@ -262,6 +267,11 @@ public class Submenu {
                 System.out.println("\n" + "Nave Militar de Transporte" + "\n");
                 p.NaveTransporteMilitar(NMT);
                 NMT.getArmado();
+                System.out.println("\n" + "Estadisticas Nave" + "\n");
+                System.out.println("Ataque: " + NMT.getAtaqueT());
+                System.out.println("Defensa: " + NMT.getDefensaT());
+                System.out.println("Velocidad: " + NMT.getVelocidadT());
+                System.out.println("Peso: " + NMT.getPesoT());
                 System.out.println("\n" + "Total: $" + (float)NMT.CostoFinal());
 
                 if(presupuesto < NMT.CostoFinal())
@@ -272,6 +282,11 @@ public class Submenu {
                 System.out.println("\n" + "Base de Guerra Espacial" + "\n");
                 p.BaseGuerra(BEG);
                 BEG.getArmado();
+                System.out.println("\n" + "Estadisticas Nave" + "\n");
+                System.out.println("Ataque: " + BEG.getAtaqueT());
+                System.out.println("Defensa: " + BEG.getDefensaT());
+                System.out.println("Velocidad: " + BEG.getVelocidadT());
+                System.out.println("Peso: " + BEG.getPesoT());
                 System.out.println("\n" + "Total: $" + (float)BEG.CostoFinal());
 
                 if(presupuesto < BEG.CostoFinal())
