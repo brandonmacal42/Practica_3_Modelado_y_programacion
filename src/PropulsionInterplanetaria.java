@@ -1,3 +1,6 @@
+/*
+ * Clase que con la que se construye el componente sistema de propulsion interplanetaria, esta extiende de SistemaPropulsion
+ */
 public class PropulsionInterplanetaria extends SistemaPropulsion{
 
 	public PropulsionInterplanetaria(){

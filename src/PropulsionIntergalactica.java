@@ -1,3 +1,6 @@
+/*
+ * Clase que con la que se construye el componente sistema de propulsion intergalactica, esta extiende de SistemaPropulsion
+ */
 public class PropulsionIntergalactica extends SistemaPropulsion{
 	
 	public PropulsionIntergalactica(){
