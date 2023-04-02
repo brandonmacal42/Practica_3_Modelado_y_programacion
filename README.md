@@ -5,13 +5,13 @@ Equipo Dinamita
 -Moisés Corpus García 116005560
 -Brandon Brayan Macal Cruz 318085470
 
-Para poder ejecutar la practica3 correctamente abrir la terminal dentro de la carpeta src una vez ya abierta ejecutar el siguiente comando en la terminal
+Para poder ejecutar la practica4 correctamente abrir la terminal dentro de la carpeta src una vez ya abierta ejecutar el siguiente comando en la terminal
 
-javac Main.java
+javac main.java
 
 una vez creados los archivos .class para ejecutar el programa colocar el siguiente comando en la terminal
 
-java Main
+java main
 
 A continuación el programa deberá correr correctamente
 Para obtener la documentación de las clases del programa de java, colocar el siguiente comando en la terminal:
@@ -19,9 +19,8 @@ Para obtener la documentación de las clases del programa de java, colocar el si
 javadoc -d docs *.java
 
 -Explicación
-Al ejecutar el programa iniciara un menu a lo que el cliente desea pedir una baguette o una pizzza, de alli se desplegara un menu para que elija 
-que debe llevar su baguette o elija de que quiere su pizza, al final tendra que confirmar la orden y le imprimira un ticket de compra
-de lo que el cliente pidio
+Al ejecutar el programa va a pedir un presupuesto al usuario, despues de eso se desplegara un menu si quiere una neve personalizada o una predertiminada, con eso 
+en la nave personalidad se desplegara los componentes de cada zona, Usamos el metodo builder
 
 Implementación de los patrones:
 Builder: Todo el codigo
