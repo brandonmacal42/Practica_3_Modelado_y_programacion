@@ -1,3 +1,6 @@
+/* 
+ * Clase que crea una de las naves predeterminadas a elegir(Nave Individual de Combate, esta extiende de armado builder
+ */
 public class NaveIndividualCombate extends ArmadoBuilder{
 
 

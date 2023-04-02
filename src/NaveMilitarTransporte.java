@@ -1,3 +1,6 @@
+/* 
+ * Clase que crea una de las naves predeterminadas a elegir(nave militar de transporte, esta extiende de armado builder
+ */
 public class NaveMilitarTransporte extends ArmadoBuilder{
 
 

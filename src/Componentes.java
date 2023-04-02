@@ -1,3 +1,6 @@
+/*
+ * Interfaz que se usa para crear todos los componentes(armas, cabina, blindaje, sistema de propulsion, )
+ */
 public interface Componentes{
 
     public String getNombre();

@@ -1,3 +1,6 @@
+/*
+ * Clase que permite construir todos los componentes de tipo sistema de propulsion , esta implementa la clase componentes
+ */
 public abstract class SistemaPropulsion implements Componentes{
 
 	public String nombrePropulsion, descripcionPropulsion;
