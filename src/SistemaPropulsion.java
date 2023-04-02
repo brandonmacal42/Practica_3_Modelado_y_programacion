@@ -1,46 +1,45 @@
 /*
  * Clase que permite construir todos los componentes de tipo sistema de propulsion , esta implementa la clase componentes
  */
-public abstract class SistemaPropulsion implements Componentes{
+public abstract class SistemaPropulsion implements Componentes {
 
 	public String nombrePropulsion, descripcionPropulsion;
 	public int AtaquePropulsion, defensaPropulsion, velocidadPropulsion, pesoPropulsion;
 	public double PrecioPropulsion;
-
 
 	/**
 	 * Funcion que regresa el nombre del sistema de propulsion
 	 * 
 	 * @return nombrePropulsion (String)
 	 */
-	public String getNombre(){
+	public String getNombre() {
 		return nombrePropulsion;
 	}
 
-/**
+	/**
 	 * Funcion que regresa el ataque del sistema de propulsion
 	 * 
 	 * @return ataquePropulsion (String)
 	 */
-	public int getAtaque(){
+	public int getAtaque() {
 		return AtaquePropulsion;
 	}
 
-		/**
+	/**
 	 * Funcion que regresa la defensa del sistema de propulsion
 	 * 
 	 * @return defensaPropulsion (int)
 	 */
-    public int getDefensa(){
+	public int getDefensa() {
 		return defensaPropulsion;
 	}
 
-		/**
+	/**
 	 * Funcion que regresa la velocidad del sistema de propulsion
 	 * 
 	 * @return velocidadPropulsion (int)
 	 */
-    public int getVelocidad(){
+	public int getVelocidad() {
 		return velocidadPropulsion;
 	}
 
@@ -49,16 +48,16 @@ public abstract class SistemaPropulsion implements Componentes{
 	 * 
 	 * @return pesoPropulsion (int)
 	 */
-    public int getPeso(){
+	public int getPeso() {
 		return pesoPropulsion;
 	}
 
-		/**
+	/**
 	 * Funcion que regresa el precio del sistema de propulsion
 	 * 
 	 * @return precioPropulsion (double)
 	 */
-    public double getPrecio(){
+	public double getPrecio() {
 		return PrecioPropulsion;
 	}
 
@@ -67,7 +66,7 @@ public abstract class SistemaPropulsion implements Componentes{
 	 * 
 	 * @return descripcionPropulsion (String)
 	 */
-	public String toString(){
+	public String toString() {
 		return descripcionPropulsion;
 	}
 
