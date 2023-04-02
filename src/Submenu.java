@@ -18,6 +18,9 @@ public class Submenu {
     double Peso;
     boolean valido = false;
 
+    /*
+     * Metodo constructor
+     */
     public Submenu() {
         opcion = 0;
         presupuesto = new int[1];
@@ -41,7 +44,9 @@ public class Submenu {
         Su[0] = 0;
     }
 
-
+/*
+     * Metodo que pregunta y asigna el presupuesto con el que cuenta el usuario
+     */
     public void setPresupuesto() {
         
         System.out.println("\n***BIENVENIDO A SPACESHIP FACTORY***" +  "\n Porfavor ingrese el presupuesto de la nave a cotizar para poder empezar a ayudarlo"); 
@@ -59,6 +64,9 @@ public class Submenu {
         menuS();
     }
 
+    /*
+     * Metodo que sirve como menu para seleccionar que tipo de componentes va a elegir el usuario en su nave o en su defecto si va a elegir un tipo de nave prederminada
+     */
     public void menuS() {
         do {
             System.out.println("***BIENVENIDO A SPACESHIP FACTORY***");
@@ -116,6 +124,9 @@ public class Submenu {
         } while (opcion != 6);
     }
 
+      /*
+     * Metodo que sirve como submenu para seleccionar que componente de tipo armas va a elegir el usuario en su nave
+     */
     public void Armas() {
         do {
             System.out.println("ARMAS");
@@ -145,6 +156,9 @@ public class Submenu {
         } while (Armaopcion != 4);
     }
 
+     /*
+     * Metodo que sirve como submenu para seleccionar que componente de tipo blindaje va a elegir el usuario en su nave
+     */
     public void Blindaje() {
         do {
             System.out.println("BLINDAJE");
@@ -174,6 +188,9 @@ public class Submenu {
         } while (Blindajeopcion != 4);
     }
 
+     /*
+     * Metodo que sirve como submenu para seleccionar que componente de tipo cabina va a elegir el usuario en su nave
+     */
     public void Cabina() {
         do {
             System.out.println("CABINA");
@@ -203,6 +220,9 @@ public class Submenu {
         } while (Cabinaopcion != 4);
     }
 
+      /*
+     * Metodo que sirve como submenu para seleccionar que componente de tipo sistema de propulsion va a elegir el usuario en su nave
+     */
     public void SistemaPropulsion() {
         do {
             System.out.println("SISTEMA DE PROPULSION");
@@ -232,8 +252,10 @@ public class Submenu {
         } while (Sistemaopcion != 4);
     }
 
+    /*
+     * Metodo que sirve como submenu para seleccionar la nave predeterminada que va a elegir el usuario
+     */
    public void Nave(){
-
         do {
             
             System.out.println("Naves por prederteminado, seleccione la suya");

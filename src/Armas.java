@@ -1,64 +1,71 @@
 /*
  * Clase que permite construir todos los componentes de tipo Arma , esta implementa la clase componentes
  */
-public abstract class Armas implements Componentes{
+public abstract class Armas implements Componentes {
 	public String nombreArma, descripcionArma;
 	public int AtaqueArma, defensaArma, velocidadArma, pesoArma;
 	public double PrecioArma;
 
 	/**
-	 *  Funcion que regresa el nombre del arma
+	 * Funcion que regresa el nombre del arma
+	 * 
 	 * @return nombreArma (String)
 	 */
-	public String getNombre(){
+	public String getNombre() {
 		return nombreArma;
 	}
 
 	/**
-	 *  Funcion que regresa el ataque del arma
-	 * @return ataqueArma (String)
+	 * Funcion que regresa el ataque del arma
+	 * 
+	 * @return ataqueArma (int)
 	 */
-	public int getAtaque(){
+	public int getAtaque() {
 		return AtaqueArma;
 	}
 
 	/**
-	 *  Funcion que regresa la defensa del arma
+	 * Funcion que regresa la defensa del arma
+	 * 
 	 * @return defensaArma (int)
 	 */
-    public int getDefensa(){
+	public int getDefensa() {
 		return defensaArma;
 	}
 
-		/**
-	 *  Funcion que regresa la velocidad del arma
+	/**
+	 * Funcion que regresa la velocidad del arma
+	 * 
 	 * @return velocidadArma (int)
 	 */
-    public int getVelocidad(){
+	public int getVelocidad() {
 		return velocidadArma;
 	}
 
-		/**
-	 *  Funcion que regresa el peso del arma
+	/**
+	 * Funcion que regresa el peso del arma
+	 * 
 	 * @return pesoArma (int)
 	 */
-    public int getPeso(){
+	public int getPeso() {
 		return pesoArma;
 	}
 
 	/**
-	 *  Funcion que regresa el precio del arma
+	 * Funcion que regresa el precio del arma
+	 * 
 	 * @return precioArma (double)
 	 */
-    public double getPrecio(){
+	public double getPrecio() {
 		return PrecioArma;
 	}
 
 	/**
-	 *  Funcion que regresa la descripcion del arma
+	 * Funcion que regresa la descripcion del arma
+	 * 
 	 * @return descripcionArma (String)
 	 */
-	public String toString(){
+	public String toString() {
 		return descripcionArma;
 	}
 }

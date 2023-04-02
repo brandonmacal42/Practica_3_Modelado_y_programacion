@@ -3,6 +3,9 @@
  */
 public class BlindajeSimple extends Blindaje{
 
+	/**
+	 * Metodo constructor
+	 */
 	public BlindajeSimple(){
 		nombreBlindaje = "Blindaje Simple";
 		AtaqueBlindaje = 0;
