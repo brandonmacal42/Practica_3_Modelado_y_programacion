@@ -3,6 +3,9 @@
  */
 public class ArmaLaserDestructor extends Armas{
 
+/**
+ * Metodo constructor
+ */
 	public ArmaLaserDestructor(){
 		nombreArma = "Laser Destructor";
 		AtaqueArma = 1500;

@@ -1,3 +1,6 @@
+/*
+ * Clase que con la que se construye el componente blindaje simple, esta extiende de Blindaje
+ */
 public class BlindajeSimple extends Blindaje{
 
 	public BlindajeSimple(){

@@ -1,5 +1,11 @@
+/*
+ * Clase que con la que se construye el componente blindaje de fortaleza, esta extiende de Blindaje
+ */
 public class BlindajeFortaleza extends Blindaje{
 
+/**
+ * Metodo constructor
+ */
 	public BlindajeFortaleza(){
 		nombreBlindaje = "Blindaje Fortaleza";
 		AtaqueBlindaje = 0;

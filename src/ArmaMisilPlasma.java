@@ -1,8 +1,10 @@
 /*
- * Clase que con la que se construye el componente arma laser destructor, esta extiende de Armas
+ * Clase que con la que se construye el componente arma misil de plasma, esta extiende de Armas
  */
 public class ArmaMisilPlasma extends Armas{
-
+/**
+ * Metodo constructor
+ */
 	public ArmaMisilPlasma(){
 		nombreArma = "Misil Plasma";
 		AtaqueArma = 1000;
